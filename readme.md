@@ -1,2 +1,4 @@
 InStock Collaborative Full Stack Project
-Patrick test
+
+- Patrick test
+- Justin Chan
