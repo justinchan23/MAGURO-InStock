@@ -1,0 +1,107 @@
+/* ------- VARIABLES ------ */
+
+$black: #323232;
+$white: #ffffff;
+$silver: #afafaf;
+$alablaster: #fafafa;
+$mercury: #e1e1e1;
+$blue: #004892;
+$darkBlue: #002f5f;
+$regularFont: AvenirNextRegular;
+$boldFont: AvenirNextBold;
+$demiBoldFont: AvenirNextDemiBold;
+
+/* ------- MIXINS ------ */
+@mixin flex {
+  display: flex;
+}
+
+@mixin flexAndWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin colorBlack {
+  color: $black;
+}
+
+@mixin colorWhite {
+  color: $white;
+}
+
+@mixin colorSilver {
+  color: $silver;
+}
+
+@mixin maxWidth {
+  width: 100%;
+}
+
+/* ------- FONTS ------ */
+
+@font-face {
+  font-family: AvenirNextRegular;
+  src: url('../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf');
+}
+
+@font-face {
+  font-family: AvenirNextBold;
+  src: url('./Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf');
+}
+
+@font-face {
+  font-family: AvenirNextDemiBold;
+  src: url('./Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf');
+}
+
+/* ------- GLOBAL ------ */
+
+* {
+  overflow-x: hidden;
+  @include colorBlack;
+  font-family: $regularFont;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  @include colorBlack;
+  font-family: $boldFont;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $boldFont;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $demiBoldFont;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: $regularFont;
+}
+
+h4,
+li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $regularFont;
+}
+
+h5,
+th,
+td {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: $regularFont;
+}
