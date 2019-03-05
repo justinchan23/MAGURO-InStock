@@ -1,28 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Nav from './Components/Nav'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Main from './Components/Main'
+import WarehouseLocations from './Components/WarehouseLocations'
+import Inventory from './Components/Inventory'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+const App = () => (
+  <div>
+    <BrowserRouter>
+      <div>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route path="/warehouses" component={WarehouseLocations} />
+          <Route path="/inventory" component={Inventory} />
+          <Route path="/warehouses/:id" component={Main} />
+          <Route path="/inventory/:id" component={Main} />
+        </Switch>
       </div>
-    );
-  }
-}
+    </BrowserRouter>
+  </div>
+)
 
-export default App;
+export default App
