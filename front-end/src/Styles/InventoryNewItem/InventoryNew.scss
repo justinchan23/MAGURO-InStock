@@ -1,0 +1,295 @@
+/* ------- VARIABLES ------ */
+
+$black: #323232;
+$white: #ffffff;
+$silver: #afafaf;
+$alablaster: #fafafa;
+$mercury: #e1e1e1;
+$blue: #004892;
+$darkblue: #002f5f;
+$regularFont: AvenirNextRegular;
+$boldFont: AvenirNextBold;
+$demiBoldFont: AvenirNextDemiBold;
+
+/* ------- MIXINS ------ */
+@mixin flex {
+  display: flex;
+}
+
+@mixin flexAndWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin colorBlack {
+  color: $black;
+}
+
+@mixin colorWhite {
+  color: $white;
+}
+
+@mixin colorSilver {
+  color: $silver;
+}
+
+@mixin marginZero {
+  margin: 0;
+}
+
+@mixin maxWidth {
+  width: 100%;
+}
+
+/* ------- FONTS ------ */
+
+@font-face {
+  font-family: AvenirNextRegular;
+  src: url('../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf');
+}
+
+@font-face {
+  font-family: AvenirNextBold;
+  src: url('../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf');
+}
+
+@font-face {
+  font-family: AvenirNextDemiBold;
+  src: url('../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf');
+}
+
+/* ------- GLOBAL ------ */
+
+* {
+  overflow-x: hidden;
+  @include colorBlack;
+  font-family: $regularFont;
+}
+
+body {
+  @include marginZero;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  @include colorBlack;
+  padding: 48px 0;
+  font-family: $boldFont;
+  @include marginZero;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $boldFont;
+  display: block;
+  @include marginZero;
+  padding: 48px 0 0 0;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $demiBoldFont;
+  padding-top: 40px;
+  @include marginZero;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: $regularFont;
+}
+
+h4,
+li {
+  font-size: 14px;
+  line-height: 20px;
+  @include colorWhite;
+  font-family: $regularFont;
+}
+
+h5,
+th,
+td {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: $regularFont;
+}
+
+/* ------- PICTURE GALLERY ------ */
+
+.color {
+  &__white {
+    @include colorWhite;
+  }
+
+  &__black {
+    @include colorBlack;
+  }
+
+  &__silver {
+    @include colorSilver;
+  }
+}
+
+/* ------- COMMENT SECTION CLASSES ------ */
+
+.warehouseNew {
+  // background-color: $silver;
+  @include flex;
+  align-content: center;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+
+  &__button {
+    @include colorWhite;
+    border-radius: 4px;
+    background-color: $blue;
+    text-align: center;
+    border: 1px $blue solid;
+    width: 160px;
+    height: 48px;
+  }
+
+  // &__overlay {
+  //   height: 100%;
+  //   width: 100%;
+  //   background-color: $silver;
+  // }
+
+  &__main {
+    @include maxWidth;
+    @include flexAndWrap;
+    justify-content: center;
+    position: absolute;
+    background: rgba(175, 175, 175, 0.5);
+  }
+
+  &__section {
+    width: 480px;
+    margin-top: 48px; /* temp */
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 0 48px 20px 48px;
+    height: 624px;
+    background-color: $white;
+  }
+
+  &__name {
+    height: 46px;
+    padding: 0 0 0 16px;
+    background-color: $alablaster;
+  }
+
+  &__comment {
+    height: 62px;
+    padding: 16px 0 0 16px;
+    background-color: $alablaster;
+    margin-bottom: 40px;
+  }
+
+  &__cancel {
+    border: none;
+    background: none;
+    padding: 0 48px;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__select {
+    height: 50px;
+    padding: 0 0 0 16px;
+    background-color: $alablaster;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+input {
+  width: 202px;
+  display: block;
+  border: 1px $mercury solid;
+  border-radius: 4px;
+}
+
+select {
+  width: 220px;
+  display: block;
+  border: 1px $mercury solid;
+  border-radius: 4px;
+  padding: 0 0 0 16px;
+  margin-bottom: 24px;
+}
+
+textarea {
+  width: 460px;
+  display: block;
+  border: 1px $mercury solid;
+  border-radius: 4px;
+}
+
+label {
+  font-size: 12px;
+  line-height: 20px;
+  @include colorSilver;
+}
+
+input {
+  margin-bottom: 24px;
+}
+
+::placeholder {
+  @include colorBlack;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 2px $black solid;
+  background-color: $white;
+}
+
+/* ------- MEDIA QUERIES ------ */
+@media screen and (max-width: 540px) {
+  .warehouseNew {
+    background: none;
+
+    &__form {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__comment {
+      width: 220px;
+    }
+
+    &__section {
+      height: 100%;
+      margin: 0;
+      padding: 0 16px;
+    }
+
+    &__buttons {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__cancel {
+      margin: 24px;
+    }
+  }
+}
