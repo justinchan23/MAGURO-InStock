@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import '../src/App.scss'
+import '../Styles/Nav/Nav.css'
 // import { Link } from "react-router-dom"
-import Logo from '../src/Logo-instock.svg'
+import Logo from '../Assets/Logo/Logo-instock.svg'
 
 class Nav extends Component {
   render() {
