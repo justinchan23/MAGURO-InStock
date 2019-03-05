@@ -6,6 +6,7 @@ import Main from './Components/Main'
 import WarehouseLocations from './Components/WarehouseLocations'
 import Inventory from './Components/Inventory'
 import InventoryNewItem from './Components/InventoryNewItem'
+import InventoryItemDetail from './Components/InventoryItemDetail'
 
 const App = () => (
   <div>
@@ -16,7 +17,8 @@ const App = () => (
           <Route exact path="/" component={Main} />
           <Route path="/warehouses" component={WarehouseLocations} />
           <Route path="/inventory" component={Inventory} />
-          <Route path="/inventory/new" component={InventoryNewItem} />
+          <Route path="/inventorynewitem" component={InventoryNewItem} />
+          <Route path="/inventoryitemdetail" component={InventoryItemDetail} />
           <Route path="/warehouses/:id" component={Main} />
           <Route path="/inventory/:id" component={Main} />
         </Switch>
