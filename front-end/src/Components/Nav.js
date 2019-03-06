@@ -12,8 +12,10 @@ class Nav extends Component {
             <li className='nav-logo'>
               <img src={Logo} alt='some value' />
             </li>
-            <li className='nav-inventory'>Inventory</li>
-            <li className='nav-location'>Locations</li>
+            <div className='nav-routes'>
+           <div><li className='nav-inventory'>Inventory</li></div>
+           <div><li className='nav-location'>Locations</li></div>
+            </div>
           </div>
         </ul>
       </nav>

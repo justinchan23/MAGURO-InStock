@@ -1,9 +1,95 @@
+// General style sets
+
 .navbar {
+  height: 80px;
+  background-color: #323232;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.nav-location {
+  color: white;
+  font-size: 13px
+}
+.nav-inventory {
+    color: white;
+    font-size: 13px
+}
+
+// Media-Queries
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .nav-logo {
+    padding: 0px 0px 0px 0px;
+    margin: 16px 0px 10px 0px
+  }
+  .nav-routes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+   
+  }
+  .nav-inventory {
+    border-bottom: white solid 3px;
+    padding: 0px 56px 8px 56px;
+  }
+  .nav-location {
+    border-bottom: #323232 solid 3px;
+    padding: 0px 56px 0px 56px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navbar {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 80px;
-    background-color:#323232;
+  }
+  .nav-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 0px 24px;
+  }
+  .nav-routes {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-logo {
+    margin: 0px 56px 0px 0px;
+  }
+  .nav-inventory {
+    border-bottom: white solid 3px;
+    margin: 0px 46px 0px 0px;
+    padding: 31px 5px 27px 5px;
+  }
+  .nav-location {
+    margin: 0px 46px 0px 0px;
+    padding: 31px 5px 27px 5px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
   .nav-components {
     display: flex;
@@ -12,20 +98,20 @@
     align-items: center;
     margin: 0px 180px;
   }
+  .nav-routes {
+    display: flex;
+    flex-direction: row;
+  }
   .nav-logo {
     margin: 0px 56px 0px 0px;
   }
-  .nav-location {
-    color: white;
-  }
   .nav-inventory {
-    color: white;
     border-bottom: white solid 3px;
     margin: 0px 46px 0px 0px;
     padding: 31px 5px 27px 5px;
   }
-  ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+  .nav-location {
+    margin: 0px 46px 0px 0px;
+    padding: 31px 5px 27px 5px;
   }
+}
