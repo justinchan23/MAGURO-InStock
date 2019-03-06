@@ -132,7 +132,7 @@ td {
 
 /* ------- SECTION CLASSES ------ */
 
-.inventoryNew {
+.warehouseNew {
   // background-color: $silver;
   @include flex;
   align-content: center;
@@ -171,7 +171,7 @@ td {
     flex-direction: column;
     border-radius: 2px;
     padding: 24px 48px 0 48px;
-    height: 600px;
+    height: 700px;
     background-color: $white;
   }
 
@@ -227,6 +227,10 @@ td {
   &__inputValid {
     border: 2px $black solid;
   }
+
+  &__top {
+    width: 100%;
+  }
 }
 
 input {
@@ -277,13 +281,13 @@ select:valid {
   background-color: $white;
 }
 
-.inventoryNew__dataFilled {
+.warehouseNew__dataFilled {
   border: 2px $black solid;
 }
 
 /* ------- MEDIA QUERIES ------ */
 @media screen and (max-width: 540px) {
-  .inventoryNew {
+  .warehouseNew {
     background: none;
 
     &__form {
@@ -318,6 +322,10 @@ select:valid {
     }
 
     &__button {
+      width: 220px;
+    }
+
+    &__top {
       width: 220px;
     }
   }
