@@ -139,7 +139,7 @@ td {
           flex-direction: column;
   border-radius: 2px;
   padding: 24px 48px 0 48px;
-  height: 600px;
+  height: 700px;
   background-color: #ffffff;
 }
 
@@ -212,6 +212,10 @@ td {
 
 .warehouseNew__inputValid {
   border: 2px #323232 solid;
+}
+
+.warehouseNew__top {
+  width: 100%;
 }
 
 input {
@@ -323,6 +327,9 @@ select:valid {
     margin-bottom: 24px;
   }
   .warehouseNew__button {
+    width: 220px;
+  }
+  .warehouseNew__top {
     width: 220px;
   }
 }

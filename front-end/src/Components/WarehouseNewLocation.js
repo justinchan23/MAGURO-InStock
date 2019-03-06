@@ -9,7 +9,7 @@ const WarehouseNewLocation = () => {
         <div className="warehouseNew__section">
           <h1>Add New</h1>
           <form className="warehouseNew__form">
-            <label>
+            <label className="warehouseNew__top">
               WAREHOUSE
               <input
                 className="warehouseNew__name"
@@ -19,36 +19,60 @@ const WarehouseNewLocation = () => {
               />
             </label>
             <label>
-              LAST ORDERED
-              <input className="warehouseNew__name" type="text" placeholder="yyyy-mm-dd" required />
+              ADDRESS
+              <input
+                className="warehouseNew__name"
+                type="text"
+                placeholder="Enter Address"
+                required
+              />
             </label>
             <label>
-              CITY <input className="warehouseNew__name" type="text" placeholder="City" required />
-            </label>
-            <label>
-              CITY <input className="warehouseNew__name" type="text" placeholder="City" required />
-            </label>
-            <label>
-              COUNTRY
+              LOCATION
               <select name="country" className="warehouseNew__select" required>
                 <option value="" />
-                <option value="Canada">Canada</option>
-                <option value="US">US</option>
-                <option value="Mexico">Mexico</option>
+                <option value="Toronto, ON">Toronto, CAN</option>
+                <option value="America, US">America, US</option>
+                <option value="Mexico, MX">Mexico, MX</option>
               </select>
             </label>
             <label>
-              QUANTITY <input className="warehouseNew__name" type="text" placeholder="0" required />
+              CONTACT NAME
+              <input className="warehouseNew__name" type="text" placeholder="Enter name" required />
             </label>
             <label>
-              CITY <input className="warehouseNew__name" type="text" placeholder="City" required />
+              POSITION{' '}
+              <input
+                className="warehouseNew__name"
+                type="text"
+                placeholder="Enter position"
+                required
+              />
             </label>
             <label>
-              ITEM DESCRIPTION
+              PHONE NUMBER{' '}
+              <input
+                className="warehouseNew__name"
+                type="text"
+                placeholder="000-000-0000"
+                required
+              />
+            </label>
+            <label>
+              EMAIL{' '}
+              <input
+                className="warehouseNew__name"
+                type="text"
+                placeholder="email@instock.com"
+                required
+              />
+            </label>
+            <label>
+              CATEGORIES
               <textarea
                 className="warehouseNew__comment"
                 type="text"
-                placeholder="(Optional)"
+                placeholder="Use commas to separate each category"
                 required
               />
             </label>
