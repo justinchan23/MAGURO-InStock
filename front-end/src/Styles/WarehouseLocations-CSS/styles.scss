@@ -113,6 +113,7 @@ td {
 
   .locations__container-header {
     margin: 0;
+    padding: 0;
 
     h1 {
       margin-bottom: 0;
@@ -120,6 +121,7 @@ td {
 
     .locations__search {
       margin-top: 16px;
+      margin-bottom: 0;
       background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
       background-repeat: no-repeat;
       background-position: 5%;
@@ -133,12 +135,33 @@ td {
   table {
     border-collapse: collapse;
 
-    .locations__table {
-      @include flexAndWrap;
+    .locations__row {
       border-bottom: 1px solid $mercury;
 
       .locations__title-desktop {
         display: none;
+      }
+
+      .padding__info {
+        padding-top: 8px;
+        margin-bottom: 0;
+      }
+
+      .warehouse__title {
+        padding-top: 24px;
+        font-weight: bold;
+      }
+
+      .warehouse__position {
+        font-style: italic;
+      }
+
+      .warehouse__category {
+        padding-bottom: 24px;
+      }
+
+      td {
+        display: block;
       }
     }
   }

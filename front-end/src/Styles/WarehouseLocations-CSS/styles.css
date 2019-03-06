@@ -74,6 +74,7 @@ td {
 
 .locations__container .locations__container-header {
   margin: 0;
+  padding: 0;
 }
 
 .locations__container .locations__container-header h1 {
@@ -82,6 +83,7 @@ td {
 
 .locations__container .locations__container-header .locations__search {
   margin-top: 16px;
+  margin-bottom: 0;
   background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
   background-repeat: no-repeat;
   background-position: 5%;
@@ -95,16 +97,33 @@ td {
   border-collapse: collapse;
 }
 
-.locations__container table .locations__table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.locations__container table .locations__row {
   border-bottom: 1px solid #e1e1e1;
 }
 
-.locations__container table .locations__table .locations__title-desktop {
+.locations__container table .locations__row .locations__title-desktop {
   display: none;
+}
+
+.locations__container table .locations__row .padding__info {
+  padding-top: 8px;
+  margin-bottom: 0;
+}
+
+.locations__container table .locations__row .warehouse__title {
+  padding-top: 24px;
+  font-weight: bold;
+}
+
+.locations__container table .locations__row .warehouse__position {
+  font-style: italic;
+}
+
+.locations__container table .locations__row .warehouse__category {
+  padding-bottom: 24px;
+}
+
+.locations__container table .locations__row td {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */
