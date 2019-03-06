@@ -12,16 +12,16 @@ ul {
 }
 .nav-location {
   color: white;
-  font-size: 13px
+  font-size: 13px;
 }
 .nav-inventory {
-    color: white;
-    font-size: 13px
+  color: white;
+  font-size: 13px;
 }
 
 // Media-Queries
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 450px) {
   .navbar {
     display: flex;
     justify-content: center;
@@ -32,18 +32,16 @@ ul {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
   }
   .nav-logo {
     padding: 0px 0px 0px 0px;
-    margin: 16px 0px 10px 0px
+    margin: 16px 0px 10px 0px;
   }
   .nav-routes {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-   
   }
   .nav-inventory {
     border-bottom: white solid 3px;
@@ -55,7 +53,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 451px) and (max-width: 1199px) {
   .navbar {
     display: flex;
     justify-content: left;
@@ -85,7 +83,7 @@ ul {
     padding: 31px 5px 27px 5px;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
+@media screen and (min-width: 1200px)  {
   .navbar {
     display: flex;
     justify-content: left;
