@@ -6,15 +6,19 @@ import Logo from '../Assets/Logo/Logo-instock.svg'
 class Nav extends Component {
   render() {
     return (
-      <nav className='navbar'>
+      <nav className="navbar">
         <ul>
-          <div className='nav-components'>
-            <li className='nav-logo'>
-              <img src={Logo} alt='some value' />
+          <div className="nav-components">
+            <li className="nav-logo">
+              <img src={Logo} alt="some value" />
             </li>
-            <div className='nav-routes'>
-           <div><li className='nav-inventory'>Inventory</li></div>
-           <div><li className='nav-location'>Locations</li></div>
+            <div className="nav-routes">
+              <div>
+                <li className="nav-inventory">Inventory</li>
+              </div>
+              <div>
+                <li className="nav-location">Locations</li>
+              </div>
             </div>
           </div>
         </ul>
