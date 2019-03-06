@@ -7,6 +7,7 @@ $alablaster: #fafafa;
 $mercury: #e1e1e1;
 $blue: #004892;
 $darkblue: #002f5f;
+$green: rgb(106, 174, 43);
 $regularFont: AvenirNextRegular;
 $boldFont: AvenirNextBold;
 $demiBoldFont: AvenirNextDemiBold;
@@ -75,27 +76,20 @@ body {
 h1 {
   font-size: 36px;
   line-height: 44px;
-  // @include colorBlack;
-  // padding: 48px 0;
+
   font-family: $boldFont;
-  // @include marginZero;
 }
 
 h2 {
   font-size: 24px;
   line-height: 32px;
   font-family: $boldFont;
-  // display: block;
-  // @include marginZero;
-  // padding: 48px 0 0 0;
 }
 
 h3 {
   font-size: 16px;
   line-height: 24px;
   font-family: $demiBoldFont;
-  // padding-top: 40px;
-  // @include marginZero;
 }
 
 p {
@@ -156,18 +150,18 @@ td {
     height: 48px;
   }
 
-  // &__overlay {
-  //   height: 100%;
-  //   width: 100%;
-  //   background-color: $silver;
-  // }
-
   &__main {
     @include maxWidth;
     @include flexAndWrap;
     justify-content: center;
     position: absolute;
-    background: rgba(175, 175, 175, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    height: 100%;
+    width: 100%;
   }
 
   &__section {
@@ -176,8 +170,8 @@ td {
     display: flex;
     flex-direction: column;
     border-radius: 2px;
-    padding: 0 48px 20px 48px;
-    height: 624px;
+    padding: 24px 48px 0 48px;
+    height: 600px;
     background-color: $white;
   }
 
@@ -228,6 +222,10 @@ td {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+  }
+
+  &__inputValid {
+    border: 2px $black solid;
   }
 }
 
@@ -317,6 +315,10 @@ select:valid {
       justify-content: space-between;
       margin-top: 15px;
       margin-bottom: 24px;
+    }
+
+    &__button {
+      width: 220px;
     }
   }
 }
