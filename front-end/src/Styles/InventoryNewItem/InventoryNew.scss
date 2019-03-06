@@ -154,7 +154,7 @@ td {
     @include flexAndWrap;
     justify-content: center;
     position: absolute;
-    background: rgba(175, 175, 175, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -221,6 +221,10 @@ td {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+  }
+
+  &__inputValid {
+    border: 2px $black solid;
   }
 }
 
@@ -310,6 +314,10 @@ select:valid {
       justify-content: space-between;
       margin-top: 15px;
       margin-bottom: 24px;
+    }
+
+    &__button {
+      width: 220px;
     }
   }
 }

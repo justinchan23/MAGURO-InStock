@@ -117,7 +117,7 @@ td {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  background: rgba(175, 175, 175, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -208,6 +208,10 @@ td {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 15px;
+}
+
+.warehouseNew__inputValid {
+  border: 2px #323232 solid;
 }
 
 input {
@@ -317,6 +321,9 @@ select:valid {
             justify-content: space-between;
     margin-top: 15px;
     margin-bottom: 24px;
+  }
+  .warehouseNew__button {
+    width: 220px;
   }
 }
 /*# sourceMappingURL=InventoryNew.css.map */
