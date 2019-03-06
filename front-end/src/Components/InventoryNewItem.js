@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import '../Styles/InventoryNewItem/InventoryNew.css'
 import Switch from 'react-switch'
 
 const InventoryNewItem = () => {
+  const productName = useRef()
+  const lastOrdered = useRef()
+  const city = useRef()
+  const country = useRef()
+  const quantity = useRef()
+  const description = useRef()
+  const [stockStatus, setStockStatus] = useState(true)
+
+  const stockChange = () => {
+    stockStatus ? setStockStatus(false) : setStockStatus(true)
+  }
+
   return (
     <content className="inventoryNew">
       <div className="inventoryNew__main">
@@ -11,18 +23,37 @@ const InventoryNewItem = () => {
           <form className="inventoryNew__form">
             <label>
               PRODUCT
-              <input className="inventoryNew__name" type="text" placeholder="Item Name" required />
+              <input
+                className="inventoryNew__name"
+                type="text"
+                placeholder="Item Name"
+                required
+                ref={productName}
+              />
             </label>
             <label>
               LAST ORDERED
-              <input className="inventoryNew__name" type="text" placeholder="yyyy-mm-dd" required />
+              <input
+                className="inventoryNew__name"
+                type="text"
+                placeholder="yyyy-mm-dd"
+                required
+                ref={lastOrdered}
+              />
             </label>
             <label>
-              CITY <input className="inventoryNew__name" type="text" placeholder="City" required />
+              CITY{' '}
+              <input
+                className="inventoryNew__name"
+                type="text"
+                placeholder="City"
+                required
+                ref={city}
+              />
             </label>
             <label>
               COUNTRY
-              <select name="country" className="inventoryNew__select" required>
+              <select name="country" className="inventoryNew__select" required ref={country}>
                 <option value="" />
                 <option value="Canada">Canada</option>
                 <option value="US">US</option>
@@ -30,14 +61,22 @@ const InventoryNewItem = () => {
               </select>
             </label>
             <label>
-              QUANTITY <input className="inventoryNew__name" type="text" placeholder="0" required />
+              QUANTITY{' '}
+              <input
+                className="inventoryNew__name"
+                type="text"
+                placeholder="0"
+                required
+                ref={quantity}
+              />
             </label>
             <label className="inventoryNew__switchContainer">
               STATUS
               <div className="inventoryNew__stock">
                 <span>IN STOCK</span>
                 <Switch
-                  checked={true}
+                  checked={stockStatus}
+                  onChange={stockChange}
                   checkedIcon={false}
                   uncheckedIcon={false}
                   className="inventoryNew__switch"
@@ -52,6 +91,7 @@ const InventoryNewItem = () => {
                 type="text"
                 placeholder="(Optional)"
                 required
+                ref={description}
               />
             </label>
           </form>
