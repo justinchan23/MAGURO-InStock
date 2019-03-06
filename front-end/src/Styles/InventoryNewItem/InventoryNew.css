@@ -118,6 +118,12 @@ td {
           justify-content: center;
   position: absolute;
   background: rgba(175, 175, 175, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  height: 100%;
+  width: 100%;
 }
 
 .warehouseNew__section {
@@ -132,8 +138,8 @@ td {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 2px;
-  padding: 0 48px 20px 48px;
-  height: 624px;
+  padding: 24px 48px 0 48px;
+  height: 600px;
   background-color: #ffffff;
 }
 
