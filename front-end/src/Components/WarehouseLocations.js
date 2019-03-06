@@ -56,7 +56,7 @@ const WarehouseLocations = () => {
         <td className="padding__info">{data.contactNumber}</td>
         <td>{data.contactEmail}</td>
         <th className="locations__title-desktop">CATEGORIES</th>
-        <td className="warehouse__category padding__info">{data.categories}</td>
+        <td className="warehouse__category padding__info ">{data.categories}</td>
         <td className="img__arrow"><img src="../Icons/SVG/Icon-arrow-right.svg" alt="right-arrow"/></td>
       </tr>
 

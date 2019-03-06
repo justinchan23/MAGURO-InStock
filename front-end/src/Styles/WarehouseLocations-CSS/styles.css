@@ -121,7 +121,7 @@ td {
 }
 
 .locations__container table .locations__row .warehouse__category {
-  padding-bottom: 24px;
+  padding-bottom: 8px;
 }
 
 .locations__container table .locations__row td {
@@ -129,7 +129,88 @@ td {
 }
 
 .locations__container table .locations__row .img__arrow {
-  left: 90%;
+  position: relative;
   float: right;
+  top: -195px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 409px) {
+  .locations__container {
+    margin: 10px;
+  }
+  .locations__container table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .locations__container table .locations__row {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .locations__container table .locations__row .img__arrow {
+    position: relative;
+    float: right;
+    top: -175px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .locations__container {
+    margin: 10px;
+  }
+  .locations__container .locations__container-header {
+    margin: 0;
+    padding: 0;
+  }
+  .locations__container .locations__container-header h1 {
+    margin-bottom: 0;
+  }
+  .locations__container .locations__container-header .locations__search {
+    margin-top: 16px;
+    margin-bottom: 0;
+    background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    width: 60%;
+    padding: 15px 35px;
+  }
+  .locations__container table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .locations__container table .locations__row {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .locations__container table .locations__row .locations__title-desktop {
+    display: none;
+  }
+  .locations__container table .locations__row .padding__info {
+    padding-top: 8px;
+    margin-bottom: 0;
+  }
+  .locations__container table .locations__row .warehouse__title {
+    padding-top: 24px;
+    font-weight: bold;
+  }
+  .locations__container table .locations__row .warehouse__position {
+    font-style: italic;
+  }
+  .locations__container table .locations__row .warehouse__category {
+    padding-bottom: 8px;
+  }
+  .locations__container table .locations__row td {
+    display: block;
+  }
+  .locations__container table .locations__row .img__arrow {
+    position: relative;
+    float: right;
+    top: -195px;
+    padding: 0;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
