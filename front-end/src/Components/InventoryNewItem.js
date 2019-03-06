@@ -1,44 +1,63 @@
 import React from 'react'
 import '../Styles/InventoryNewItem/InventoryNew.css'
+import Switch from 'react-switch'
 
 const InventoryNewItem = () => {
   return (
-    <content class="warehouseNew">
-      <div class="warehouseNew__main">
-        <div class="warehouseNew__section">
+    <content className="warehouseNew">
+      <div className="warehouseNew__main">
+        <div className="warehouseNew__section">
           <h1>Create New</h1>
-          <form class="warehouseNew__form">
-            <label for="product">
-              PRODUCT <input class="warehouseNew__name" type="text" placeholder="Item Name" />
+          <form className="warehouseNew__form">
+            <label>
+              PRODUCT{' '}
+              <input className="warehouseNew__name" type="text" placeholder="Item Name" required />
             </label>
-            <label for="lastOrdered">
-              LAST ORDERED <input class="warehouseNew__name" type="text" placeholder="yyyy-mm-dd" />
+            <label>
+              LAST ORDERED
+              <input className="warehouseNew__name" type="text" placeholder="yyyy-mm-dd" required />
             </label>
-            <label for="city">
-              CITY <input class="warehouseNew__name" type="text" placeholder="City" />
+            <label>
+              CITY <input className="warehouseNew__name" type="text" placeholder="City" required />
             </label>
-            <label for="country">
+            <label>
               COUNTRY
-              <select name="country" class="warehouseNew__select">
+              <select name="country" className="warehouseNew__select" required>
+                <option value="" />
                 <option value="Canada">Canada</option>
                 <option value="US">US</option>
                 <option value="Mexico">Mexico</option>
               </select>
             </label>
-            <label for="quantity">
-              QUANTITY <input class="warehouseNew__name" type="text" placeholder="0" />
+            <label>
+              QUANTITY <input className="warehouseNew__name" type="text" placeholder="0" required />
             </label>
-            <label for="status">
-              STATUS <input class="warehouseNew__name" type="text" placeholder="instock value" />
+            <label className="warehouseNew__switchContainer">
+              STATUS
+              <div className="warehouseNew__stock">
+                <span>IN STOCK</span>
+                <Switch
+                  checked={true}
+                  checkedIcon={false}
+                  uncheckedIcon={false}
+                  className="warehouseNew__switch"
+                  width={46}
+                />
+              </div>
             </label>
-            <label for="itemDescription">
+            <label>
               ITEM DESCRIPTION
-              <textarea class="warehouseNew__comment" type="text" placeholder="(Optional)" />
+              <textarea
+                className="warehouseNew__comment"
+                type="text"
+                placeholder="(Optional)"
+                required
+              />
             </label>
           </form>
-          <div class="warehouseNew__buttons">
-            <button class="warehouseNew__cancel">CANCEL</button>
-            <button class="warehouseNew__button" id="warehouseNew__addButton" type="submit">
+          <div className="warehouseNew__buttons">
+            <button className="warehouseNew__cancel">CANCEL</button>
+            <button className="warehouseNew__button" id="warehouseNew__addButton" type="submit">
               SAVE
             </button>
           </div>
