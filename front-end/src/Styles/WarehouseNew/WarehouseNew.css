@@ -218,6 +218,18 @@ td {
   width: 100%;
 }
 
+.warehouseNew__addButton {
+  width: 80px;
+  height: 80px;
+  color: #ffffff;
+  background-color: #004892;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 150px;
+  right: 150px;
+  border: none;
+}
+
 input {
   width: 202px;
   display: block;

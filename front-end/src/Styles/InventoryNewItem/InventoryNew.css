@@ -223,6 +223,7 @@ td {
   position: fixed;
   bottom: 150px;
   right: 150px;
+  border: none;
 }
 
 input {
