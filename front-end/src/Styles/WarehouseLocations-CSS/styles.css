@@ -1,0 +1,110 @@
+/* ------- VARIABLES ------ */
+/* ------- MIXINS ------ */
+/* ------- FONTS ------ */
+@font-face {
+  font-family: AvenirNextRegular;
+  src: url("../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: AvenirNextBold;
+  src: url("../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: AvenirNextDemiBold;
+  src: url("../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf");
+}
+
+/* ------- GLOBAL ------ */
+* {
+  overflow-x: hidden;
+  color: #323232;
+  font-family: AvenirNextRegular;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #323232;
+  font-family: AvenirNextBold;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: AvenirNextBold;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: AvenirNextDemiBold;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: AvenirNextRegular;
+}
+
+h4,
+li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: AvenirNextRegular;
+}
+
+h5,
+th,
+td {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: AvenirNextRegular;
+}
+
+/* ------- STYLING ------ */
+.locations__container {
+  margin: 10px;
+}
+
+.locations__container .locations__container-header {
+  margin: 0;
+}
+
+.locations__container .locations__container-header h1 {
+  margin-bottom: 0;
+}
+
+.locations__container .locations__container-header .locations__search {
+  margin-top: 16px;
+  background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 5%;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  width: 60%;
+  padding: 15px 35px;
+}
+
+.locations__container table {
+  border-collapse: collapse;
+}
+
+.locations__container table .locations__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.locations__container table .locations__table .locations__title-desktop {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
