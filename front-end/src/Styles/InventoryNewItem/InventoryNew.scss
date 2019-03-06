@@ -269,10 +269,17 @@ input {
 
 input:focus,
 textarea:focus,
-select:focus {
+select:focus,
+input:valid,
+textarea:valid,
+select:valid {
   outline: none;
   border: 2px $black solid;
   background-color: $white;
+}
+
+.warehouseNew__dataFilled {
+  border: 2px $black solid;
 }
 
 /* ------- MEDIA QUERIES ------ */

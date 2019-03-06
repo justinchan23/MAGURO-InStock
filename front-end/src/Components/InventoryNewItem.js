@@ -10,25 +10,27 @@ const InventoryNewItem = () => {
           <h1>Create New</h1>
           <form className="warehouseNew__form">
             <label>
-              PRODUCT <input className="warehouseNew__name" type="text" placeholder="Item Name" />
+              PRODUCT{' '}
+              <input className="warehouseNew__name" type="text" placeholder="Item Name" required />
             </label>
             <label>
               LAST ORDERED
-              <input className="warehouseNew__name" type="text" placeholder="yyyy-mm-dd" />
+              <input className="warehouseNew__name" type="text" placeholder="yyyy-mm-dd" required />
             </label>
             <label>
-              CITY <input className="warehouseNew__name" type="text" placeholder="City" />
+              CITY <input className="warehouseNew__name" type="text" placeholder="City" required />
             </label>
             <label>
               COUNTRY
-              <select name="country" className="warehouseNew__select">
+              <select name="country" className="warehouseNew__select" required>
+                <option value="" />
                 <option value="Canada">Canada</option>
                 <option value="US">US</option>
                 <option value="Mexico">Mexico</option>
               </select>
             </label>
             <label>
-              QUANTITY <input className="warehouseNew__name" type="text" placeholder="0" />
+              QUANTITY <input className="warehouseNew__name" type="text" placeholder="0" required />
             </label>
             <label className="warehouseNew__switchContainer">
               STATUS
@@ -45,7 +47,12 @@ const InventoryNewItem = () => {
             </label>
             <label>
               ITEM DESCRIPTION
-              <textarea className="warehouseNew__comment" type="text" placeholder="(Optional)" />
+              <textarea
+                className="warehouseNew__comment"
+                type="text"
+                placeholder="(Optional)"
+                required
+              />
             </label>
           </form>
           <div className="warehouseNew__buttons">
