@@ -286,7 +286,7 @@ select:valid {
 }
 
 /* ------- MEDIA QUERIES ------ */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 575px) {
   .warehouseNew {
     background: none;
 
@@ -296,7 +296,7 @@ select:valid {
     }
 
     &__comment {
-      width: 202px;
+      width: 268px;
     }
 
     &__section {
@@ -326,7 +326,15 @@ select:valid {
     }
 
     &__top {
-      width: 220px;
+      width: auto;
     }
+  }
+
+  input {
+    width: 268px;
+  }
+
+  select {
+    width: 288px;
   }
 }

@@ -282,7 +282,7 @@ select:valid {
 }
 
 /* ------- MEDIA QUERIES ------ */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 575px) {
   .inventoryNew {
     background: none;
 
@@ -292,7 +292,7 @@ select:valid {
     }
 
     &__comment {
-      width: 202px;
+      width: 268px;
     }
 
     &__section {
@@ -319,6 +319,10 @@ select:valid {
 
     &__button {
       width: 220px;
+    }
+
+    &__switchContainer {
+      width: 288px;
     }
   }
 }

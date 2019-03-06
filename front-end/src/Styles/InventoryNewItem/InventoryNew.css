@@ -279,7 +279,7 @@ select:valid {
 }
 
 /* ------- MEDIA QUERIES ------ */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 575px) {
   .inventoryNew {
     background: none;
   }
@@ -293,7 +293,7 @@ select:valid {
             align-items: center;
   }
   .inventoryNew__comment {
-    width: 202px;
+    width: 268px;
   }
   .inventoryNew__section {
     height: 100%;
@@ -324,6 +324,9 @@ select:valid {
   }
   .inventoryNew__button {
     width: 220px;
+  }
+  .inventoryNew__switchContainer {
+    width: 288px;
   }
 }
 /*# sourceMappingURL=InventoryNew.css.map */

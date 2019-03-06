@@ -283,7 +283,7 @@ select:valid {
 }
 
 /* ------- MEDIA QUERIES ------ */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 575px) {
   .warehouseNew {
     background: none;
   }
@@ -297,7 +297,7 @@ select:valid {
             align-items: center;
   }
   .warehouseNew__comment {
-    width: 202px;
+    width: 268px;
   }
   .warehouseNew__section {
     height: 100%;
@@ -330,7 +330,13 @@ select:valid {
     width: 220px;
   }
   .warehouseNew__top {
-    width: 220px;
+    width: auto;
+  }
+  input {
+    width: 268px;
+  }
+  select {
+    width: 288px;
   }
 }
 /*# sourceMappingURL=WarehouseNew.css.map */
