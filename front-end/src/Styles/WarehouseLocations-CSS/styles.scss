@@ -134,6 +134,7 @@ td {
 
   table {
     border-collapse: collapse;
+    width: 100%;
 
     .locations__row {
       border-bottom: 1px solid $mercury;
@@ -162,8 +163,19 @@ td {
 
       td {
         display: block;
+
+        // .img__arrow {
+        //   position: absolute;
+        //   left: 90%;
+        //   top: 40%;
+        // }
       }
+      .img__arrow {
+        // position: relative;
+        left: 90%;
+        float: right;
+      }
+
     }
   }
-
 }

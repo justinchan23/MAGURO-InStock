@@ -95,6 +95,7 @@ td {
 
 .locations__container table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 .locations__container table .locations__row {
@@ -125,5 +126,10 @@ td {
 
 .locations__container table .locations__row td {
   display: block;
+}
+
+.locations__container table .locations__row .img__arrow {
+  left: 90%;
+  float: right;
 }
 /*# sourceMappingURL=styles.css.map */
