@@ -136,9 +136,9 @@ td {
   }
 }
 
-/* ------- SECTION CLASSES ------ */
+/* ------- COMMENT SECTION CLASSES ------ */
 
-.inventoryNew {
+.warehouseNew {
   // background-color: $silver;
   @include flex;
   align-content: center;
@@ -279,13 +279,13 @@ select:valid {
   background-color: $white;
 }
 
-.inventoryNew__dataFilled {
+.warehouseNew__dataFilled {
   border: 2px $black solid;
 }
 
 /* ------- MEDIA QUERIES ------ */
 @media screen and (max-width: 540px) {
-  .inventoryNew {
+  .warehouseNew {
     background: none;
 
     &__form {

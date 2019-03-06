@@ -4,25 +4,25 @@ import Switch from 'react-switch'
 
 const InventoryNewItem = () => {
   return (
-    <content className="warehouseNew">
-      <div className="warehouseNew__main">
-        <div className="warehouseNew__section">
+    <content className="inventoryNew">
+      <div className="inventoryNew__main">
+        <div className="inventoryNew__section">
           <h1>Create New</h1>
-          <form className="warehouseNew__form">
+          <form className="inventoryNew__form">
             <label>
               PRODUCT{' '}
-              <input className="warehouseNew__name" type="text" placeholder="Item Name" required />
+              <input className="inventoryNew__name" type="text" placeholder="Item Name" required />
             </label>
             <label>
               LAST ORDERED
-              <input className="warehouseNew__name" type="text" placeholder="yyyy-mm-dd" required />
+              <input className="inventoryNew__name" type="text" placeholder="yyyy-mm-dd" required />
             </label>
             <label>
-              CITY <input className="warehouseNew__name" type="text" placeholder="City" required />
+              CITY <input className="inventoryNew__name" type="text" placeholder="City" required />
             </label>
             <label>
               COUNTRY
-              <select name="country" className="warehouseNew__select" required>
+              <select name="country" className="inventoryNew__select" required>
                 <option value="" />
                 <option value="Canada">Canada</option>
                 <option value="US">US</option>
@@ -30,17 +30,17 @@ const InventoryNewItem = () => {
               </select>
             </label>
             <label>
-              QUANTITY <input className="warehouseNew__name" type="text" placeholder="0" required />
+              QUANTITY <input className="inventoryNew__name" type="text" placeholder="0" required />
             </label>
-            <label className="warehouseNew__switchContainer">
+            <label className="inventoryNew__switchContainer">
               STATUS
-              <div className="warehouseNew__stock">
+              <div className="inventoryNew__stock">
                 <span>IN STOCK</span>
                 <Switch
                   checked={true}
                   checkedIcon={false}
                   uncheckedIcon={false}
-                  className="warehouseNew__switch"
+                  className="inventoryNew__switch"
                   width={46}
                 />
               </div>
@@ -48,16 +48,16 @@ const InventoryNewItem = () => {
             <label>
               ITEM DESCRIPTION
               <textarea
-                className="warehouseNew__comment"
+                className="inventoryNew__comment"
                 type="text"
                 placeholder="(Optional)"
                 required
               />
             </label>
           </form>
-          <div className="warehouseNew__buttons">
-            <button className="warehouseNew__cancel">CANCEL</button>
-            <button className="warehouseNew__button" id="warehouseNew__addButton" type="submit">
+          <div className="inventoryNew__buttons">
+            <button className="inventoryNew__cancel">CANCEL</button>
+            <button className="inventoryNew__button" id="inventoryNew__addButton" type="submit">
               SAVE
             </button>
           </div>
