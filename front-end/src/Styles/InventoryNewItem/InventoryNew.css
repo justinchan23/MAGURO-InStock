@@ -32,27 +32,19 @@ body {
 h1 {
   font-size: 36px;
   line-height: 44px;
-  color: #323232;
-  padding: 48px 0;
   font-family: AvenirNextBold;
-  margin: 0;
 }
 
 h2 {
   font-size: 24px;
   line-height: 32px;
   font-family: AvenirNextBold;
-  display: block;
-  margin: 0;
-  padding: 48px 0 0 0;
 }
 
 h3 {
   font-size: 16px;
   line-height: 24px;
   font-family: AvenirNextDemiBold;
-  padding-top: 40px;
-  margin: 0;
 }
 
 p {
