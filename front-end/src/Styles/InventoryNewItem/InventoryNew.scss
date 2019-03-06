@@ -336,5 +336,13 @@ select:valid {
     &__switchContainer {
       width: 288px;
     }
+
+    &__addButton {
+      width: 60px;
+      height: 60px;
+      bottom: 150px;
+      right: 50px;
+      border: none;
+    }
   }
 }

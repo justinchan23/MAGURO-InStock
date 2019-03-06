@@ -340,5 +340,12 @@ select:valid {
   .inventoryNew__switchContainer {
     width: 288px;
   }
+  .inventoryNew__addButton {
+    width: 60px;
+    height: 60px;
+    bottom: 150px;
+    right: 50px;
+    border: none;
+  }
 }
 /*# sourceMappingURL=InventoryNew.css.map */

@@ -340,6 +340,14 @@ select:valid {
     &__top {
       width: auto;
     }
+
+    &__addButton {
+      width: 60px;
+      height: 60px;
+      bottom: 150px;
+      right: 50px;
+      border: none;
+    }
   }
 
   input {
