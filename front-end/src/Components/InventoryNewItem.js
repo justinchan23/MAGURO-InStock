@@ -23,10 +23,29 @@ const InventoryNewItem = () => {
   }
 
   const addNewItem = () => {
-    console.log(newItemForm.current.country.value)
-    alert('Item added successfully')
-    setAddStatus(false)
-    newItemForm.current.reset()
+    if (
+      !newItemForm.current.productName.value ||
+      !newItemForm.current.lastOrdered.value ||
+      !newItemForm.current.city.value ||
+      !newItemForm.current.country.value ||
+      !newItemForm.current.quantity.value
+    ) {
+      alert('All fields are required unless marked.')
+    }
+    const newInventoryItem = {
+      name: newItemForm.current.productName.value,
+      'short-description': newItemForm.current.description.value,
+      'last-ordered': newItemForm.current.lastOrdered.value,
+      city: newItemForm.current.city.value,
+      country: newItemForm.current.country.value,
+      quantity: newItemForm.current.quantity.value,
+      'in-stock': stockStatus
+    }
+
+    console.log(newInventoryItem)
+    // alert('Item added successfully')
+    // setAddStatus(false)
+    // newItemForm.current.reset()
   }
 
   const cancelAdd = () => {
