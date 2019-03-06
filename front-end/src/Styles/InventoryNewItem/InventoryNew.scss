@@ -75,27 +75,27 @@ body {
 h1 {
   font-size: 36px;
   line-height: 44px;
-  @include colorBlack;
-  padding: 48px 0;
+  // @include colorBlack;
+  // padding: 48px 0;
   font-family: $boldFont;
-  @include marginZero;
+  // @include marginZero;
 }
 
 h2 {
   font-size: 24px;
   line-height: 32px;
   font-family: $boldFont;
-  display: block;
-  @include marginZero;
-  padding: 48px 0 0 0;
+  // display: block;
+  // @include marginZero;
+  // padding: 48px 0 0 0;
 }
 
 h3 {
   font-size: 16px;
   line-height: 24px;
   font-family: $demiBoldFont;
-  padding-top: 40px;
-  @include marginZero;
+  // padding-top: 40px;
+  // @include marginZero;
 }
 
 p {
