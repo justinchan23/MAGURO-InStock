@@ -101,5 +101,10 @@ td {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.locations__container table .locations__table .locations__title-desktop {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

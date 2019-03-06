@@ -18,7 +18,7 @@ const WarehouseLocations = () => {
     <table>
       <tbody>
       <tr className="locations__table">
-        <th>WAREHOUSE</th>
+        <th className="locations__title-desktop">WAREHOUSE</th>
         <th>Warehouse Number 1</th>
         <td>469 King St W, Toronto, ON</td>
         <th>CONTACT</th>
@@ -32,7 +32,7 @@ const WarehouseLocations = () => {
       </tr>
 
       <tr className="locations__table">
-        <th>WAREHOUSE</th>
+        <th className="locations__title-desktop">WAREHOUSE</th>
         <th>Warehouse Number 1</th>
         <td>469 King St W, Toronto, ON</td>
         <th>CONTACT</th>
@@ -46,7 +46,7 @@ const WarehouseLocations = () => {
       </tr>
 
       <tr className="locations__table">
-        <th>WAREHOUSE</th>
+        <th className="locations__title-desktop">WAREHOUSE</th>
         <th>Warehouse Number 1</th>
         <td>469 King St W, Toronto, ON</td>
         <th>CONTACT</th>

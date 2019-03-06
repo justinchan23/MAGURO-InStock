@@ -135,6 +135,11 @@ td {
 
     .locations__table {
       @include flexAndWrap;
+      border-bottom: 1px solid $mercury;
+
+      .locations__title-desktop {
+        display: none;
+      }
     }
   }
 
