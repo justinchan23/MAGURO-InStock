@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Styles/InventoryNewItem/InventoryNew.css'
+import Switch from 'react-switch'
 
 const InventoryNewItem = () => {
   return (
@@ -12,7 +13,7 @@ const InventoryNewItem = () => {
               PRODUCT <input className="warehouseNew__name" type="text" placeholder="Item Name" />
             </label>
             <label>
-              LAST ORDERED{' '}
+              LAST ORDERED
               <input className="warehouseNew__name" type="text" placeholder="yyyy-mm-dd" />
             </label>
             <label>
@@ -29,9 +30,17 @@ const InventoryNewItem = () => {
             <label>
               QUANTITY <input className="warehouseNew__name" type="text" placeholder="0" />
             </label>
-            <label>
-              STATUS{' '}
-              <input className="warehouseNew__name" type="text" placeholder="instock value" />
+            <label className="warehouseNew__switchContainer">
+              STATUS
+              <div className="warehouseNew__stock">
+                <span>IN STOCK</span>
+                <Switch
+                  checked={false}
+                  checkedIcon={false}
+                  uncheckedIcon={false}
+                  className="warehouseNew__switch"
+                />
+              </div>
             </label>
             <label>
               ITEM DESCRIPTION

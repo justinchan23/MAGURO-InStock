@@ -216,6 +216,18 @@ td {
     display: flex;
     justify-content: flex-end;
   }
+
+  &__switchContainer {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__stock {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
 }
 
 input {
@@ -290,6 +302,13 @@ select:focus {
 
     &__cancel {
       margin: 24px;
+    }
+
+    &__stock {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      margin-bottom: 24px;
     }
   }
 }
