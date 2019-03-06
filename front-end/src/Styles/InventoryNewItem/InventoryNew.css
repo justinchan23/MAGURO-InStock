@@ -139,7 +139,7 @@ td {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 0 48px 20px 48px;
   height: 624px;
   background-color: #ffffff;
@@ -215,14 +215,14 @@ input {
   width: 202px;
   display: block;
   border: 1px #e1e1e1 solid;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 select {
   width: 220px;
   display: block;
   border: 1px #e1e1e1 solid;
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 0 0 0 16px;
   margin-bottom: 24px;
 }
@@ -231,7 +231,7 @@ textarea {
   width: 460px;
   display: block;
   border: 1px #e1e1e1 solid;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 label {
@@ -283,7 +283,7 @@ select:focus {
             align-items: center;
   }
   .warehouseNew__comment {
-    width: 220px;
+    width: 202px;
   }
   .warehouseNew__section {
     height: 100%;

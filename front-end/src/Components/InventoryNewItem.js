@@ -35,10 +35,11 @@ const InventoryNewItem = () => {
               <div className="warehouseNew__stock">
                 <span>IN STOCK</span>
                 <Switch
-                  checked={false}
+                  checked={true}
                   checkedIcon={false}
                   uncheckedIcon={false}
                   className="warehouseNew__switch"
+                  width={46}
                 />
               </div>
             </label>
