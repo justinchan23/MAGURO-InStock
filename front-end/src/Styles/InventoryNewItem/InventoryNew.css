@@ -214,6 +214,17 @@ td {
   border: 2px #323232 solid;
 }
 
+.inventoryNew__addButton {
+  width: 80px;
+  height: 80px;
+  color: #ffffff;
+  background-color: #004892;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 150px;
+  right: 150px;
+}
+
 input {
   width: 202px;
   display: block;

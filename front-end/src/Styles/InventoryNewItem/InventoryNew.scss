@@ -227,6 +227,17 @@ td {
   &__inputValid {
     border: 2px $black solid;
   }
+
+  &__addButton {
+    width: 80px;
+    height: 80px;
+    color: $white;
+    background-color: $blue;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 150px;
+    right: 150px;
+  }
 }
 
 input {
