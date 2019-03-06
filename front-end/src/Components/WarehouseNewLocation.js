@@ -1,20 +1,29 @@
 import React from 'react'
 import '../Styles/WarehouseNew/WarehouseNew.css'
+// import Switch from 'react-switch'
 
 const WarehouseNewLocation = () => {
   return (
     <content className="warehouseNew">
       <div className="warehouseNew__main">
         <div className="warehouseNew__section">
-          <h1>Create New</h1>
+          <h1>Add New</h1>
           <form className="warehouseNew__form">
             <label>
-              PRODUCT
-              <input className="warehouseNew__name" type="text" placeholder="Item Name" required />
+              WAREHOUSE
+              <input
+                className="warehouseNew__name"
+                type="text"
+                placeholder="Name &amp; ID"
+                required
+              />
             </label>
             <label>
               LAST ORDERED
               <input className="warehouseNew__name" type="text" placeholder="yyyy-mm-dd" required />
+            </label>
+            <label>
+              CITY <input className="warehouseNew__name" type="text" placeholder="City" required />
             </label>
             <label>
               CITY <input className="warehouseNew__name" type="text" placeholder="City" required />
@@ -31,18 +40,8 @@ const WarehouseNewLocation = () => {
             <label>
               QUANTITY <input className="warehouseNew__name" type="text" placeholder="0" required />
             </label>
-            <label className="warehouseNew__switchContainer">
-              STATUS
-              <div className="warehouseNew__stock">
-                <span>IN STOCK</span>
-                {/* <Switch
-                  checked={true}
-                  checkedIcon={false}
-                  uncheckedIcon={false}
-                  className="warehouseNew__switch"
-                  width={46}
-                /> */}
-              </div>
+            <label>
+              CITY <input className="warehouseNew__name" type="text" placeholder="City" required />
             </label>
             <label>
               ITEM DESCRIPTION

@@ -82,7 +82,7 @@ td {
   color: #afafaf;
 }
 
-/* ------- COMMENT SECTION CLASSES ------ */
+/* ------- SECTION CLASSES ------ */
 .warehouseNew {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +117,13 @@ td {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  background: rgba(175, 175, 175, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  height: 100%;
+  width: 100%;
 }
 
 .warehouseNew__section {
@@ -132,8 +138,8 @@ td {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 2px;
-  padding: 0 48px 20px 48px;
-  height: 624px;
+  padding: 24px 48px 0 48px;
+  height: 600px;
   background-color: #ffffff;
 }
 
@@ -202,6 +208,10 @@ td {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 15px;
+}
+
+.warehouseNew__inputValid {
+  border: 2px #323232 solid;
 }
 
 input {
@@ -311,6 +321,9 @@ select:valid {
             justify-content: space-between;
     margin-top: 15px;
     margin-bottom: 24px;
+  }
+  .warehouseNew__button {
+    width: 220px;
   }
 }
 /*# sourceMappingURL=WarehouseNew.css.map */

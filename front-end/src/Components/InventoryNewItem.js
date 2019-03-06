@@ -10,7 +10,7 @@ const InventoryNewItem = () => {
           <h1>Create New</h1>
           <form className="inventoryNew__form">
             <label>
-              PRODUCT{' '}
+              PRODUCT
               <input className="inventoryNew__name" type="text" placeholder="Item Name" required />
             </label>
             <label>
