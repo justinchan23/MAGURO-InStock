@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react'
 import '../Styles/WarehouseNew/WarehouseNew.css'
-import axios from 'axios'
+// import axios from 'axios'
 
 const WarehouseNewLocation = () => {
   const [addWarehouseStatus, setAddWarehouseStatus] = useState(false)
   const newWarehouseForm = useRef()
-  const apiURL = 'http://localhost:8080/warehouses'
+  // const apiURL = 'http://localhost:8080/warehouses'
 
   const cancelAdd = () => {
     newWarehouseForm.current.reset()
