@@ -55,7 +55,7 @@ const WarehouseNewLocation = () => {
     return (
       <content className="warehouseNew">
         <div className="warehouseNew__main">
-          <div className="warehouseNew__section">
+          <div className="warehouseNew__section scale-in-center">
             <h1>Add New</h1>
             <form className="warehouseNew__form" ref={newWarehouseForm}>
               <label className="warehouseNew__top">
@@ -145,7 +145,7 @@ const WarehouseNewLocation = () => {
               <button
                 className="warehouseNew__button"
                 id="warehouseNew__addButton"
-                type="submit"
+                type="button"
                 onClick={addWarehouse}
               >
                 SAVE
