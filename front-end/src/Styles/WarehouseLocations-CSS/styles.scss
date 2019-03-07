@@ -126,6 +126,7 @@ td {
       background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
       background-repeat: no-repeat;
       background-position: 5%;
+      background-color: $alablaster;
       border: 1px solid $mercury;
       border-radius: 2px;
       width: 60%;
@@ -196,7 +197,7 @@ td {
         background-position: 5%;
         border: 1px solid $mercury;
         border-radius: 2px;
-        width: 30%;
+        width: 20%;
         padding: 15px 35px;
       }
     }
@@ -216,6 +217,10 @@ td {
 
         .tablet-view {
           width: 100%;
+        }
+
+        .category {
+          width: 30%;
         }
 
         .img__arrow {
@@ -251,7 +256,7 @@ td {
         background-position: 5%;
         border: 1px solid $mercury;
         border-radius: 2px;
-        width: 22%;
+        width: 25%;
         padding: 15px 35px;
       }
     }
@@ -266,16 +271,17 @@ td {
       }
 
       .warehouse {
-        padding-right: 19%;
+        padding-right: 190px;
       }
 
       .contact {
-        padding-right: 17%;
+        padding-right: 170px;
       }
 
       .contact__info {
-        padding-right: 10%;
+        padding-right: 100px;
       }
+
     }
 
       .locations__row {
@@ -285,6 +291,10 @@ td {
         .tablet-view {
           width: 14%;
           padding-bottom: 16px;
+        }
+
+        .category {
+          width: 20%;
         }
   
         .img__arrow {
