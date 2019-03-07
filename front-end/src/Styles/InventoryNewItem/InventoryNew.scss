@@ -166,10 +166,10 @@ td {
 
   &__section {
     width: 480px;
-    margin-top: 48px; /* temp */
+    margin-top: 148px; /* temp */
     display: flex;
     flex-direction: column;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 24px 48px 0 48px;
     height: 600px;
     background-color: $white;
@@ -227,6 +227,18 @@ td {
   &__inputValid {
     border: 2px $black solid;
   }
+
+  &__addButton {
+    width: 80px;
+    height: 80px;
+    color: $white;
+    background-color: $blue;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 150px;
+    right: 150px;
+    border: none;
+  }
 }
 
 input {
@@ -282,7 +294,7 @@ select:valid {
 }
 
 /* ------- MEDIA QUERIES ------ */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 575px) {
   .inventoryNew {
     background: none;
 
@@ -292,7 +304,7 @@ select:valid {
     }
 
     &__comment {
-      width: 202px;
+      width: 268px;
     }
 
     &__section {
@@ -319,6 +331,18 @@ select:valid {
 
     &__button {
       width: 220px;
+    }
+
+    &__switchContainer {
+      width: 288px;
+    }
+
+    &__addButton {
+      width: 60px;
+      height: 60px;
+      bottom: 150px;
+      right: 50px;
+      border: none;
     }
   }
 }

@@ -128,7 +128,7 @@ td {
 
 .warehouseNew__section {
   width: 480px;
-  margin-top: 48px;
+  margin-top: 148px;
   /* temp */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,7 +137,7 @@ td {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 24px 48px 0 48px;
   height: 700px;
   background-color: #ffffff;
@@ -218,6 +218,18 @@ td {
   width: 100%;
 }
 
+.warehouseNew__addButton {
+  width: 80px;
+  height: 80px;
+  color: #ffffff;
+  background-color: #004892;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 150px;
+  right: 150px;
+  border: none;
+}
+
 input {
   width: 202px;
   display: block;
@@ -283,7 +295,7 @@ select:valid {
 }
 
 /* ------- MEDIA QUERIES ------ */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 575px) {
   .warehouseNew {
     background: none;
   }
@@ -297,7 +309,7 @@ select:valid {
             align-items: center;
   }
   .warehouseNew__comment {
-    width: 202px;
+    width: 268px;
   }
   .warehouseNew__section {
     height: 100%;
@@ -330,7 +342,20 @@ select:valid {
     width: 220px;
   }
   .warehouseNew__top {
-    width: 220px;
+    width: auto;
+  }
+  .warehouseNew__addButton {
+    width: 60px;
+    height: 60px;
+    bottom: 150px;
+    right: 50px;
+    border: none;
+  }
+  input {
+    width: 268px;
+  }
+  select {
+    width: 288px;
   }
 }
 /*# sourceMappingURL=WarehouseNew.css.map */
