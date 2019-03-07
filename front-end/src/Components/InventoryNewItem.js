@@ -60,7 +60,7 @@ const InventoryNewItem = () => {
     return (
       <content className="inventoryNew">
         <div className="inventoryNew__main">
-          <div className="inventoryNew__section">
+          <div className="inventoryNew__section scale-in-center">
             <h1>Create New</h1>
             <form className="inventoryNew__form" ref={newItemForm}>
               <label>
@@ -78,7 +78,7 @@ const InventoryNewItem = () => {
                 <input
                   className="inventoryNew__name"
                   type="text"
-                  placeholder="yyyy-mm-dd"
+                  placeholder="mm-dd-yyyy"
                   required
                   name="lastOrdered"
                 />
@@ -144,7 +144,7 @@ const InventoryNewItem = () => {
               <button
                 className="inventoryNew__button"
                 id="inventoryNew__addButton"
-                type="submit"
+                type="button"
                 onClick={addNewItem}
               >
                 SAVE

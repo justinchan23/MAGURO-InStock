@@ -108,7 +108,6 @@ td {
 
 /* ------- STYLING ------ */
 
-
 .locations__container {
   margin: 10px;
 
@@ -131,7 +130,15 @@ td {
       border-radius: 2px;
       width: 180px;
       padding: 15px 35px;
+    }
 
+    .locations__search:focus {
+      background-image: none;
+    }
+
+    input:focus::placeholder,
+    textarea:focus::placeholder {
+      color: transparent;
     }
   }
 
@@ -177,7 +184,7 @@ td {
 @media (min-width: 768px) {
   .locations__container {
     margin: 20px;
-  
+
     .locations__container-header {
       margin: 0;
       margin-bottom: 12px;
@@ -185,11 +192,11 @@ td {
       @include flex;
       justify-content: space-between;
       align-items: center;
-  
+
       h1 {
         margin-bottom: 0;
       }
-  
+
       .locations__search {
         margin-top: 16px;
         margin-bottom: 0;
@@ -202,9 +209,8 @@ td {
         padding: 15px 35px;
       }
     }
-  
-    table {    
 
+    table {
       .locations__title-desktop {
         display: none;
       }
@@ -230,14 +236,14 @@ td {
         }
       }
     }
-  }  
+  }
 }
 
 @media (min-width: 1080px) {
   .locations__container {
     margin: 16px;
     max-width: 1080px;
-  
+
     .locations__container-header {
       margin: 0;
       margin-bottom: 48px;
@@ -245,11 +251,11 @@ td {
       @include flex;
       justify-content: space-between;
       align-items: center;
-  
+
       h1 {
         margin-bottom: 0;
       }
-  
+
       .locations__search {
         margin-top: 16px;
         margin-bottom: 0;
@@ -262,29 +268,28 @@ td {
         padding: 15px 35px;
       }
     }
-  
-    table {    
-    .locations__titles {
-      display: flex;
-      
-      .locations__title-desktop {
-        @include colorSilver;
-        display: block;
-      }
 
-      .warehouse {
-        padding-right: 190px;
-      }
+    table {
+      .locations__titles {
+        display: flex;
 
-      .contact {
-        padding-right: 170px;
-      }
+        .locations__title-desktop {
+          @include colorSilver;
+          display: block;
+        }
 
-      .contact__info {
-        padding-right: 100px;
-      }
+        .warehouse {
+          padding-right: 190px;
+        }
 
-    }
+        .contact {
+          padding-right: 170px;
+        }
+
+        .contact__info {
+          padding-right: 100px;
+        }
+      }
 
       .locations__row {
         border-bottom: 1px solid $mercury;
@@ -298,14 +303,14 @@ td {
         .category {
           width: 20%;
         }
-  
+
         .img__arrow {
           position: relative;
           top: 0;
         }
       }
     }
-  }   
+  }
 }
 
 @media (min-width: 1280px) {

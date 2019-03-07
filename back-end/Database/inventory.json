@@ -10,7 +10,7 @@
     "quantity": 12000,
     "reference-number": "DDXUZMI1",
     "in-stock": true,
-    "categories": ["Industrial", "Automotive", "Heavy", "Mechanical", "Engineering", "Sales"]
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Sales"
   },
   {
     "id": 48586,
@@ -23,7 +23,7 @@
     "quantity": 12000,
     "reference-number": "KEMUWFS1",
     "in-stock": true,
-    "categories": ["Industrial", "Automotive", "Heavy", "Mechanical", "Engineering", "Sales"]
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Sales"
   },
   {
     "id": 99119,
@@ -36,7 +36,7 @@
     "quantity": 12000,
     "reference-number": "ZTNEPWG1IIV",
     "in-stock": true,
-    "categories": ["Industrial", "Automotive", "Heavy", "Mechanical", "Engineering", "Sales"]
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Sales"
   },
   {
     "id": 59209,
@@ -49,7 +49,7 @@
     "quantity": 12000,
     "reference-number": "CDMEMKK1",
     "in-stock": true,
-    "categories": ["Industrial", "Automotive", "Heavy", "Mechanical", "Engineering", "Sales"]
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Sales"
   },
   {
     "id": 34804,
@@ -62,7 +62,7 @@
     "quantity": 12000,
     "reference-number": "CHYULTO1180",
     "in-stock": true,
-    "categories": ["Industrial", "Automotive", "Heavy", "Mechanical", "Engineering", "Sales"]
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Sales"
   },
   {
     "id": 49625,
@@ -75,7 +75,7 @@
     "quantity": 12000,
     "reference-number": "WMZAHNR1",
     "in-stock": true,
-    "categories": ["Industrial", "Automotive", "Heavy", "Mechanical", "Engineering", "Sales"]
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Sales"
   },
   {
     "id": 21210,
@@ -88,7 +88,7 @@
     "quantity": 12000,
     "reference-number": "IKAUDKB1",
     "in-stock": true,
-    "categories": ["Industrial", "Automotive", "Heavy", "Mechanical", "Engineering", "Sales"]
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Sales"
   },
   {
     "id": 94384,
@@ -101,7 +101,7 @@
     "quantity": 12000,
     "reference-number": "KIYAIRW1",
     "in-stock": true,
-    "categories": ["Industrial", "Automotive", "Heavy", "Mechanical", "Engineering", "Sales"]
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Sales"
   },
   {
     "id": 63788,
@@ -114,7 +114,7 @@
     "quantity": 12000,
     "reference-number": "ECLIAMZ1",
     "in-stock": true,
-    "categories": ["Industrial", "Automotive", "Heavy", "Mechanical", "Engineering", "Sales"]
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Sales"
   },
   {
     "id": 93580,
@@ -127,6 +127,6 @@
     "quantity": 12000,
     "reference-number": "ECPARUA1",
     "in-stock": true,
-    "categories": ["Industrial", "Automotive", "Heavy", "Mechanical", "Engineering", "Sales"]
+    "categories": "Industrial, Automotive, Heavy, Mechanical, Engineering, Sales"
   }
 ]
