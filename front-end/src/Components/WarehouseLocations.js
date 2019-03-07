@@ -18,7 +18,7 @@ class WarehouseLocations extends React.Component {
     const warehouseList = warehouses.map((warehouse, id) => {
       return (
         <tr className="locations__row" key={id}>
-          <td className="warehouse__title tablet-view"><b>{warehouse.name}</b><br />{warehouse.address}</td>
+          <td className="warehouse__title"><b>{warehouse.name}</b><br />{warehouse.address}</td>
           <td className="padding__info">{warehouse.ContactName}<br /><i>{warehouse.ContactPosition}</i></td>
           <td className="padding__info">{warehouse.ContactNumber}<br />{warehouse.ContactEmail}</td>
           <td className="warehouse__category padding__info category">{warehouse.categories}</td>
@@ -45,6 +45,7 @@ class WarehouseLocations extends React.Component {
               <th className="locations__title-desktop contact__info">CONTACT INFORMATION</th>
               <th className="locations__title-desktop">CATEGORIES</th>
             </tr>
+            {warehouseList}
             {warehouseList}
           </tbody>
         </table>
