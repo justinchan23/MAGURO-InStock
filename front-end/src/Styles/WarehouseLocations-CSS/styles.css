@@ -87,6 +87,7 @@ td {
   background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
   background-repeat: no-repeat;
   background-position: 5%;
+  background-color: #fafafa;
   border: 1px solid #e1e1e1;
   border-radius: 2px;
   width: 60%;
@@ -160,7 +161,7 @@ td {
     background-position: 5%;
     border: 1px solid #e1e1e1;
     border-radius: 2px;
-    width: 30%;
+    width: 20%;
     padding: 15px 35px;
   }
   .locations__container table .locations__title-desktop {
@@ -183,6 +184,9 @@ td {
   }
   .locations__container table .locations__row .tablet-view {
     width: 100%;
+  }
+  .locations__container table .locations__row .category {
+    width: 30%;
   }
   .locations__container table .locations__row .img__arrow {
     position: relative;
@@ -219,7 +223,7 @@ td {
     background-position: 5%;
     border: 1px solid #e1e1e1;
     border-radius: 2px;
-    width: 22%;
+    width: 25%;
     padding: 15px 35px;
   }
   .locations__container table .locations__titles {
@@ -232,13 +236,13 @@ td {
     display: block;
   }
   .locations__container table .locations__titles .warehouse {
-    padding-right: 19%;
+    padding-right: 190px;
   }
   .locations__container table .locations__titles .contact {
-    padding-right: 17%;
+    padding-right: 170px;
   }
   .locations__container table .locations__titles .contact__info {
-    padding-right: 10%;
+    padding-right: 100px;
   }
   .locations__container table .locations__row {
     border-bottom: 1px solid #e1e1e1;
@@ -247,6 +251,9 @@ td {
   .locations__container table .locations__row .tablet-view {
     width: 14%;
     padding-bottom: 16px;
+  }
+  .locations__container table .locations__row .category {
+    width: 20%;
   }
   .locations__container table .locations__row .img__arrow {
     position: relative;
