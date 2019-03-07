@@ -1,20 +1,16 @@
 import React, { Component } from 'react'
 import '../Styles/WarehouseDetails/WarehouseDetails.css'
 import BackButton from '../Assets/Icons/SVG/Icon-back-arrow.svg'
+import { Link } from 'react-router-dom'
 
 class WarehouseDetail extends Component {
   render() {
     return (
       <div className="cd">
         <div className="cd__one">
-          <img
-            className="cd__backbutton"
-            src={BackButton}
-            alt="backbutton"
-            onClick={() => {
-              this.props.history.goBack()
-            }}
-          />
+          <Link to="/warehouses">
+            <img className="cd__backbutton" src={BackButton} alt="backbutton" />
+          </Link>
           <h1 className="cd__one__title">Warehouse Name</h1>
         </div>
         <hr className="cd__hr" />
