@@ -60,7 +60,7 @@ const InventoryNewItem = () => {
     return (
       <content className="inventoryNew">
         <div className="inventoryNew__main">
-          <div className="inventoryNew__section">
+          <div className="inventoryNew__section scale-in-center">
             <h1>Create New</h1>
             <form className="inventoryNew__form" ref={newItemForm}>
               <label>
