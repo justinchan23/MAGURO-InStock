@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Styles/WarehouseLocations-CSS/styles.css'
 import WarehouseNewLocation from './WarehouseNewLocation'
+import { Link } from 'react-router-dom'
 
 const warehouses = [
   {
@@ -36,7 +37,9 @@ class WarehouseLocations extends React.Component {
           </td>
           <td className="warehouse__category padding__info category">{warehouse.categories}</td>
           <td className="img__arrow">
-            <img src="../Icons/SVG/Icon-arrow-right.svg" alt="right-arrow" />
+            <Link to="/warehousedetails">
+              <img src="../Icons/SVG/Icon-arrow-right.svg" alt="right-arrow" />
+            </Link>
           </td>
         </tr>
       )

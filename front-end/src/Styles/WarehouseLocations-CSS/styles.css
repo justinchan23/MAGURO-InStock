@@ -94,6 +94,30 @@ td {
   padding: 15px 35px;
 }
 
+.locations__container .locations__container-header .locations__search:focus {
+  background-image: none;
+}
+
+.locations__container .locations__container-header input:focus::-webkit-input-placeholder,
+.locations__container .locations__container-header textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.locations__container .locations__container-header input:focus:-ms-input-placeholder,
+.locations__container .locations__container-header textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.locations__container .locations__container-header input:focus::-ms-input-placeholder,
+.locations__container .locations__container-header textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.locations__container .locations__container-header input:focus::placeholder,
+.locations__container .locations__container-header textarea:focus::placeholder {
+  color: transparent;
+}
+
 .locations__container table {
   border-collapse: collapse;
   width: 100%;
