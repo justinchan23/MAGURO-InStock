@@ -9,6 +9,7 @@ import InventoryNewItem from './Components/InventoryNewItem'
 import InventoryItemDetail from './Components/InventoryItemDetail'
 import WarehouseInventory from './Components/WarehouseInventory'
 import WarehouseDetails from './Components/WarehouseDetails' 
+import WarehouseNewLocation from './Components/WarehouseNewLocation'
 
 const App = () => (
   <div>
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/inventoryitemdetail" component={InventoryItemDetail} />
           <Route path="/warehouseinventory" component={WarehouseInventory} />
           <Route path="/warehousedetails" component={WarehouseDetails} />
+          <Route path="/warehousenew" component={WarehouseNewLocation} />
           <Route path="/warehouses/:id" component={Main} />
           <Route path="/inventory/:id" component={Main} />
         </Switch>
