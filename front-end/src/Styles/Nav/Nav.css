@@ -1,3 +1,8 @@
+.activeRoute {
+  border-bottom-color: white;
+  border-bottom-style: solid;
+}
+
 .navbar {
   height: 80px;
   background-color: #323232;
@@ -10,14 +15,16 @@ ul {
   width: 100%;
 }
 
-.nav-location {
+.nav_link {
   color: white;
   font-size: 13px;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
-.nav-inventory {
-  color: white;
-  font-size: 13px;
+.k {
+  padding: 0px 0px 0px 0px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 450px) {
@@ -62,14 +69,6 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .nav-inventory {
-    border-bottom: white solid 3px;
-    padding: 0px 56px 8px 56px;
-  }
-  .nav-location {
-    border-bottom: #323232 solid 3px;
-    padding: 0px 56px 0px 56px;
-  }
 }
 
 @media screen and (min-width: 451px) and (max-width: 1199px) {
@@ -112,15 +111,6 @@ ul {
   .nav-logo {
     margin: 0px 56px 0px 0px;
   }
-  .nav-inventory {
-    border-bottom: white solid 3px;
-    margin: 0px 46px 0px 0px;
-    padding: 31px 5px 27px 5px;
-  }
-  .nav-location {
-    margin: 0px 46px 0px 0px;
-    padding: 31px 5px 27px 5px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -162,15 +152,6 @@ ul {
   }
   .nav-logo {
     margin: 0px 56px 0px 0px;
-  }
-  .nav-inventory {
-    border-bottom: white solid 3px;
-    margin: 0px 46px 0px 0px;
-    padding: 31px 5px 27px 5px;
-  }
-  .nav-location {
-    margin: 0px 46px 0px 0px;
-    padding: 31px 5px 27px 5px;
   }
 }
 /*# sourceMappingURL=Nav.css.map */
