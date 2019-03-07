@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../Styles/Nav/Nav.css'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Logo from '../Assets/Logo/Logo-instock.svg'
 
 class Nav extends Component {
@@ -16,14 +16,22 @@ class Nav extends Component {
             </Link>
             <div className='nav-routes'>
               <div>
-                <Link to='/'>
-                  <li className='nav-inventory'>Inventory</li>
-                </Link>
+                <li className='k'>
+                  <NavLink to='/inventory' className='nav_link' activeClassName='activeRoute'>
+                    Inventory
+                  </NavLink>
+                </li>
               </div>
               <div>
-                <Link to='/warehouseinventory'>
-                  <li className='nav-location'>Locations</li>
-                </Link>
+                <li className='k'>
+                  <NavLink
+                    to='/warehouseinventory'
+                    className='nav_link'
+                    activeClassName='activeRoute'
+                  >
+                    Locations
+                  </NavLink>
+                </li>
               </div>
             </div>
           </div>
