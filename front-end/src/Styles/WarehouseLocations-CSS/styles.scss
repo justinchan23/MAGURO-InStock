@@ -129,8 +129,9 @@ td {
       background-color: $alablaster;
       border: 1px solid $mercury;
       border-radius: 2px;
-      width: 60%;
+      width: 180px;
       padding: 15px 35px;
+
     }
   }
 
@@ -215,7 +216,7 @@ td {
         border-bottom: 1px solid $mercury;
         width: 100%;
 
-        .tablet-view {
+        .warehouse__title {
           width: 100%;
         }
 
@@ -232,9 +233,10 @@ td {
   }  
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
   .locations__container {
-    margin: 0 180px;
+    margin: 16px;
+    max-width: 1080px;
   
     .locations__container-header {
       margin: 0;
@@ -288,7 +290,7 @@ td {
         border-bottom: 1px solid $mercury;
         width: 100%;
 
-        .tablet-view {
+        .warehouse__title {
           width: 14%;
           padding-bottom: 16px;
         }
@@ -304,4 +306,10 @@ td {
       }
     }
   }   
+}
+
+@media (min-width: 1280px) {
+  .locations__container {
+    margin: 0 180px;
+  }
 }
