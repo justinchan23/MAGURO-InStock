@@ -26,27 +26,27 @@ const WarehouseNewLocation = () => {
     ) {
       alert('All fields are required unless marked.')
     }
-    const newWarehouse = {
-      'warehouse-name': newWarehouseForm.current.warehouseName.value,
-      address:
-        newWarehouseForm.current.address.value + ', ' + newWarehouseForm.current.location.value,
-      'contact-name': newWarehouseForm.current.contactName.value,
-      'contact-title': newWarehouseForm.current.position.value,
-      'contact-phone': newWarehouseForm.current.phoneNumber.value,
-      'contact-email': newWarehouseForm.current.email.value,
-      categories: newWarehouseForm.current.categories.value
-    }
+    // const newWarehouse = {
+    //   'warehouse-name': newWarehouseForm.current.warehouseName.value,
+    //   address:
+    //     newWarehouseForm.current.address.value + ', ' + newWarehouseForm.current.location.value,
+    //   'contact-name': newWarehouseForm.current.contactName.value,
+    //   'contact-title': newWarehouseForm.current.position.value,
+    //   'contact-phone': newWarehouseForm.current.phoneNumber.value,
+    //   'contact-email': newWarehouseForm.current.email.value,
+    //   categories: newWarehouseForm.current.categories.value
+    // }
 
-    axios.post(apiURL, newWarehouse).then(response => {
-      console.log(response)
-      if (response.status === 200) {
-        alert('Item successfully added')
-        newWarehouseForm.current.reset()
-        setAddWarehouseStatus(false)
-      } else {
-        alert('Error adding item. Please try again.')
-      }
-    })
+    // axios.post(apiURL, newWarehouse).then(response => {
+    //   console.log(response)
+    //   if (response.status === 200) {
+    //     alert('Item successfully added')
+    //     newWarehouseForm.current.reset()
+    //     setAddWarehouseStatus(false)
+    //   } else {
+    //     alert('Error adding item. Please try again.')
+    //   }
+    // })
   }
 
   useEffect(() => {}, [addWarehouseStatus])
