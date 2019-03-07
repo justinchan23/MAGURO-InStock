@@ -8,6 +8,7 @@ a {
   border-bottom-color: white;
   border-bottom-style: solid;
 }
+
 .navbar {
   height: 80px;
   background-color: #323232;
@@ -18,16 +19,8 @@ ul {
   padding: 0;
   width: 100%;
 }
-.nav_link {
-  color: white;
-  font-size: 13px;
-  text-decoration: none;
-  margin: 0px;
-  padding: 30px 0 27px 0;
-}
-.k {
-  padding: 0px 0px 0px 0px;
-}
+
+
 
 // Media-Queries
 
@@ -45,13 +38,20 @@ ul {
   }
   .nav-logo {
     padding: 0px 0px 0px 0px;
-    margin: 16px 0px 10px 0px;
+    margin: 26px 0px 4px 0px;
   }
   .nav-routes {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+  }
+  .nav_link {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0px 0px;
+    padding: 0px 53px 8.5px 53px;
   }
 }
 
@@ -75,6 +75,13 @@ ul {
   .nav-logo {
     margin: 0px 56px 0px 0px;
   }
+  .nav_link {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0px 16px;
+    padding: 32px 0 29px 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .navbar {
@@ -95,5 +102,12 @@ ul {
   }
   .nav-logo {
     margin: 0px 56px 0px 0px;
+  }
+  .nav_link {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0px 16px;
+    padding: 32px 0 29px 0;
   }
 }
