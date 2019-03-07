@@ -145,7 +145,7 @@ const WarehouseNewLocation = () => {
               <button
                 className="warehouseNew__button"
                 id="warehouseNew__addButton"
-                type="submit"
+                type="button"
                 onClick={addWarehouse}
               >
                 SAVE

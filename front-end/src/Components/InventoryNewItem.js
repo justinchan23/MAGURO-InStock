@@ -144,7 +144,7 @@ const InventoryNewItem = () => {
               <button
                 className="inventoryNew__button"
                 id="inventoryNew__addButton"
-                type="submit"
+                type="button"
                 onClick={addNewItem}
               >
                 SAVE
