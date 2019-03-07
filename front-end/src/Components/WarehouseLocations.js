@@ -37,20 +37,18 @@ class WarehouseLocations extends React.Component {
             alt="search"
           />
         </div>
-
-          <table>
-            <tbody>
-              <tr className="locations__titles">
-                <th className="locations__title-desktop warehouse">WAREHOUSE</th>
-                <th className="locations__title-desktop contact">CONTACT</th>
-                <th className="locations__title-desktop contact__info">CONTACT INFORMATION</th>
-                <th className="locations__title-desktop">CATEGORIES</th>
-              </tr>
-              {warehouseList}
-              {warehouseList}
-            </tbody>
-          </table>
-
+        <table>
+          <tbody>
+            <tr className="locations__titles">
+              <th className="locations__title-desktop warehouse">WAREHOUSE</th>
+              <th className="locations__title-desktop contact">CONTACT</th>
+              <th className="locations__title-desktop contact__info">CONTACT INFORMATION</th>
+              <th className="locations__title-desktop">CATEGORIES</th>
+            </tr>
+            {warehouseList}
+            {warehouseList}
+          </tbody>
+        </table>
       </div>
     )
   }
