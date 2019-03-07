@@ -8,7 +8,7 @@ const data = {
   contactPosition: "Warehouse Manager",
   contactNumber: "+1 416 678 2345",
   contactEmail: "weinberg@instack.com",
-  categories: "Industrial, Automotive, Heavy, Mechanical, Engineering, Transportation"
+  categories: "Industrial, Automotive, Heavy"
 }
 
 
@@ -28,34 +28,23 @@ const WarehouseLocations = () => {
 
     <table>
       <tbody>
-
-
+        
       <tr className="locations__row">
         <th className="locations__title-desktop">WAREHOUSE</th>
-        <td className="warehouse__title">{data.warehouseName}</td>
-        <td>{data.warehouseAddress}</td>
+        <td className="warehouse__title tablet-view"><b>{data.warehouseName}</b><br />{data.warehouseAddress}</td>
         <th className="locations__title-desktop">CONTACT</th>
-        <td className="padding__info">{data.contactName}</td>
-        <td className="warehouse__position">{data.contactPosition}</td>
+        <td className="padding__info">{data.contactName}<br /><i>{data.contactPosition}</i></td>
         <th className="locations__title-desktop">CONTACT INFORMATION</th>
-        <td className="padding__info">{data.contactNumber}</td>
-        <td>{data.contactEmail}</td>
+        <td className="padding__info">{data.contactNumber}<br />{data.contactEmail}</td>
         <th className="locations__title-desktop">CATEGORIES</th>
         <td className="warehouse__category padding__info">{data.categories}</td>
         <td className="img__arrow"><img src="../Icons/SVG/Icon-arrow-right.svg" alt="right-arrow"/></td>
       </tr>
 
       <tr className="locations__row">
-        <th className="locations__title-desktop">WAREHOUSE</th>
-        <td className="warehouse__title">{data.warehouseName}</td>
-        <td>{data.warehouseAddress}</td>
-        <th className="locations__title-desktop">CONTACT</th>
-        <td className="padding__info">{data.contactName}</td>
-        <td className="warehouse__position">{data.contactPosition}</td>
-        <th className="locations__title-desktop">CONTACT INFORMATION</th>
-        <td className="padding__info">{data.contactNumber}</td>
-        <td>{data.contactEmail}</td>
-        <th className="locations__title-desktop">CATEGORIES</th>
+        <td className="warehouse__title tablet-view"><b>{data.warehouseName}</b><br />{data.warehouseAddress}</td>
+        <td className="padding__info">{data.contactName}<br /><i>{data.contactPosition}</i></td>
+        <td className="padding__info">{data.contactNumber}<br />{data.contactEmail}</td>
         <td className="warehouse__category padding__info ">{data.categories}</td>
         <td className="img__arrow"><img src="../Icons/SVG/Icon-arrow-right.svg" alt="right-arrow"/></td>
       </tr>
