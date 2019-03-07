@@ -1,0 +1,126 @@
+.cd {
+  margin: 0px 20px;
+}
+.cd__one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cd__header {
+  color: #afafaf;
+  padding: 0px;
+  font-size: 14px;
+  margin: 0px;
+}
+.cd__info {
+  color: #323232;
+  padding: 0px;
+  margin: 0px;
+}
+.cd__backbutton {
+    margin: 0px 20px 0px 0px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .cd__hr {
+      display: none;
+  }
+    .cd__one {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+  }
+  .cd__one__title {
+    padding: 0px;
+    font-size: 22.5px;
+  }
+
+  .cd__block {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cd__header {
+    margin: 0px 0px 10px 0px;
+  }
+  .cd__info {
+    width: 80%
+  }
+  .cd__info__chunk {
+    display: flex;
+    flex-direction: column;
+  }
+  .cd__info__block {
+    margin: 0px 0px 20px 0px;
+}
+}
+@media screen and (min-width: 451px) and (max-width: 1199px) {
+  .cd__one {
+    display: flex;
+    justify-content: left;
+    height: 80px;
+  }
+  .cd__backbutton {
+    margin: 0px 25px 0px 0px;
+  }
+  .cd__one__title {
+    margin: 0px 25px 0px 0px;
+  }
+  .cd__desk {
+      display: flex;
+      flex-direction: row;
+      width: 100%
+  }
+  .cd__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cd__info__chunk {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+  }
+  .cd__header {
+      margin: 0px 0px 5px 0px;
+  }
+  .cd__info__block {
+      margin: 0px 0px 20px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cd {
+    margin: 0px 180px;
+  }
+  .cd__one {
+    display: flex;
+    justify-content: left;
+    height: 80px;
+  }
+  .cd__info__chunk {
+    display: flex;
+    flex-direction: row;
+  }
+  .cd__one__title {
+    margin: 0px 25px 0px 0px;
+  }
+  .cd__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cd__info__chunk {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+  }
+  .cd__header {
+      margin: 0px 0px 5px 0px;
+  }
+  .cd__info__block {
+      margin: 0px 0px 20px 0px;
+  }
+}
