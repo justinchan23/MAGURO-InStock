@@ -78,7 +78,7 @@ const InventoryNewItem = () => {
                 <input
                   className="inventoryNew__name"
                   type="text"
-                  placeholder="yyyy-mm-dd"
+                  placeholder="mm-dd-yyyy"
                   required
                   name="lastOrdered"
                 />
