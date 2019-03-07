@@ -4,12 +4,6 @@ import Switch from 'react-switch'
 import axios from 'axios'
 
 const InventoryNewItem = () => {
-  // const productName = useRef()
-  // const lastOrdered = useRef()
-  // const city = useRef()
-  // const country = useRef()
-  // const quantity = useRef()
-  // const description = useRef()
   const [stockStatus, setStockStatus] = useState(true)
   const newItemForm = useRef()
   const [addStatus, setAddStatus] = useState(false)
