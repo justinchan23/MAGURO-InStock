@@ -1,4 +1,9 @@
 // General style sets
+
+a {
+  display: inline-block;
+}
+
 .activeRoute {
   border-bottom-color: white;
   border-bottom-style: solid;
@@ -16,12 +21,12 @@ ul {
 .nav_link {
   color: white;
   font-size: 13px;
-  text-decoration: none ;
+  text-decoration: none;
   margin: 0px;
-  padding: 0px
+  padding: 0px;
 }
 .k {
-  padding: 0px 0px 0px 0px
+  padding: 0px 0px 0px 0px;
 }
 
 // Media-Queries
@@ -48,7 +53,6 @@ ul {
     width: 100%;
     justify-content: space-between;
   }
-
 }
 
 @media screen and (min-width: 451px) and (max-width: 1199px) {
@@ -71,7 +75,6 @@ ul {
   .nav-logo {
     margin: 0px 56px 0px 0px;
   }
-
 }
 @media screen and (min-width: 1200px) {
   .navbar {
