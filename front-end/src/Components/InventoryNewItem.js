@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import '../Styles/InventoryNewItem/InventoryNew.css'
 import Switch from 'react-switch'
-// import axios from 'axios'
+import axios from 'axios'
 
 const InventoryNewItem = () => {
   // const productName = useRef()
@@ -13,6 +13,7 @@ const InventoryNewItem = () => {
   const [stockStatus, setStockStatus] = useState(true)
   const newItemForm = useRef()
   const [addStatus, setAddStatus] = useState(false)
+  const apiURL = 'http://localhost:8080/inventory'
 
   const stockStatusChange = () => {
     stockStatus ? setStockStatus(false) : setStockStatus(true)
@@ -42,10 +43,16 @@ const InventoryNewItem = () => {
       'in-stock': stockStatus
     }
 
-    console.log(newInventoryItem)
-    // alert('Item added successfully')
-    // setAddStatus(false)
-    // newItemForm.current.reset()
+    axios.post(apiURL, newInventoryItem).then(response => {
+      console.log(response)
+      if (response.status === 200) {
+        alert('Item successfully added')
+        newItemForm.current.reset()
+        setAddStatus(false)
+      } else {
+        alert('Error adding item. Please try again.')
+      }
+    })
   }
 
   const cancelAdd = () => {
