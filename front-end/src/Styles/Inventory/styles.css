@@ -157,7 +157,7 @@ td {
     width: 25%;
   }
   .inventory__container {
-    margin: 32px;
+    margin: 20px;
   }
   .inventory__container .inventory__container-header {
     margin: 0;
@@ -168,7 +168,10 @@ td {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .inventory__container .inventory__container-header h1 {
     margin-bottom: 0;
@@ -182,7 +185,7 @@ td {
     background-color: #fafafa;
     border: 1px solid #e1e1e1;
     border-radius: 2px;
-    width: 180px;
+    width: 20%;
     padding: 15px 35px;
   }
   .inventory__container table {
@@ -193,6 +196,9 @@ td {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .inventory__container table .inventory__header--desktop .inventory__item {
+    width: 33%;
   }
   .inventory__container table th {
     text-align: left;
@@ -208,16 +214,21 @@ td {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 24px 0;
     border-bottom: 1px solid #e1e1e1;
+    width: 100%;
   }
   .inventory__container table .inventory__row .mobile {
     display: none;
   }
+  .inventory__container table .inventory__row .inventory__item {
+    width: 39%;
+  }
+  .inventory__container table .inventory__row .inventory__quantity {
+    padding-left: 6px;
+  }
   .inventory__container table .inventory__row td {
-    padding-right: 12px;
     padding-bottom: 12px;
-    width: 30%;
+    width: 29%;
   }
   .inventory__container table .inventory__row .kebab {
     width: auto;
@@ -225,6 +236,41 @@ td {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media (min-width: 1120px) {
+  .inventory__container {
+    margin: 16px;
+  }
+  .inventory__container .inventory__container-header {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 48px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inventory__container .inventory__container-header h1 {
+    margin-bottom: 0;
+  }
+  .inventory__container .inventory__container-header .inventory__search {
+    margin-top: 16px;
+    margin-bottom: 0;
+    background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    width: 25%;
+    padding: 15px 35px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
