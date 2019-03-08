@@ -1,5 +1,6 @@
 .cd {
   margin: 0px 20px;
+  max-width: 1080px;
 }
 
 .cd__one {

@@ -1,5 +1,6 @@
 .cd {
   margin: 0px 20px;
+  max-width: 1080px;
 }
 .cd__one {
   display: flex;
@@ -18,14 +19,14 @@
   margin: 0px;
 }
 .cd__backbutton {
-    margin: 0px 20px 0px 0px;
+  margin: 0px 20px 0px 0px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 450px) {
   .cd__hr {
-      display: none;
+    display: none;
   }
-    .cd__one {
+  .cd__one {
     display: flex;
     flex-direction: row;
     height: 100px;
@@ -45,7 +46,7 @@
     margin: 0px 0px 10px 0px;
   }
   .cd__info {
-    width: 80%
+    width: 80%;
   }
   .cd__info__chunk {
     display: flex;
@@ -53,7 +54,7 @@
   }
   .cd__info__block {
     margin: 0px 0px 20px 0px;
-}
+  }
 }
 @media screen and (min-width: 451px) and (max-width: 1199px) {
   .cd__one {
@@ -68,9 +69,9 @@
     margin: 0px 25px 0px 0px;
   }
   .cd__desk {
-      display: flex;
-      flex-direction: row;
-      width: 100%
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
   .cd__block {
     display: flex;
@@ -84,10 +85,10 @@
     width: 100%;
   }
   .cd__header {
-      margin: 0px 0px 5px 0px;
+    margin: 0px 0px 5px 0px;
   }
   .cd__info__block {
-      margin: 0px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -118,9 +119,9 @@
     width: 100%;
   }
   .cd__header {
-      margin: 0px 0px 5px 0px;
+    margin: 0px 0px 5px 0px;
   }
   .cd__info__block {
-      margin: 0px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
   }
 }

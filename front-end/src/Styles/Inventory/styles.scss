@@ -111,7 +111,10 @@ td {
   display: none;
 }
 
-
+.warehouse {
+  margin: 0;
+  background-color: $alablaster;
+}
 
 .inventory__container {
   margin: 10px;
@@ -138,7 +141,7 @@ td {
       border: 1px solid $mercury;
       border-radius: 2px;
       width: 180px;
-      padding: 15px 35px;      
+      padding: 15px 35px;
     }
   }
 
@@ -177,6 +180,9 @@ td {
       }
     }
   }
+  .warehouse {
+    margin: 0;
+  }
 }
 
 @media (min-width: 600px) {
@@ -185,10 +191,13 @@ td {
     @include colorSilver;
     width: 25%;
   }
-
+  .warehouse {
+    margin: 0;
+    padding: 0 24px;
+  }
   .inventory__container {
     margin: 20px;
-  
+
     .inventory__container-header {
       margin: 0;
       padding: 0;
@@ -200,7 +209,7 @@ td {
       h1 {
         margin-bottom: 0;
       }
-  
+
       .inventory__search {
         margin-top: 16px;
         margin-bottom: 0;
@@ -211,14 +220,14 @@ td {
         border: 1px solid $mercury;
         border-radius: 2px;
         width: 20%;
-        padding: 15px 35px;      
+        padding: 15px 35px;
       }
     }
-  
+
     table {
       border-collapse: collapse;
       width: 100%;
-  
+
       .inventory__header--desktop {
         display: flex;
 
@@ -241,7 +250,7 @@ td {
         .mobile {
           display: none;
         }
-  
+
         .inventory__item {
           width: 39%;
         }
@@ -254,21 +263,21 @@ td {
           padding-bottom: 12px;
           width: 29%;
         }
-  
+
         .kebab {
           width: auto;
           position: relative;
-          align-self: center
+          align-self: center;
         }
       }
     }
-  } 
+  }
 }
 
 @media (min-width: 1120px) {
   .inventory__container {
     margin: 16px;
-  
+
     .inventory__container-header {
       margin: 0;
       padding: 0;
@@ -280,7 +289,7 @@ td {
       h1 {
         margin-bottom: 0;
       }
-  
+
       .inventory__search {
         margin-top: 16px;
         margin-bottom: 0;
@@ -291,8 +300,11 @@ td {
         border: 1px solid $mercury;
         border-radius: 2px;
         width: 25%;
-        padding: 15px 35px;      
+        padding: 15px 35px;
       }
     }
-  }  
+  }
+}
+.warehouse {
+  margin: 0;
 }
