@@ -1,0 +1,211 @@
+/* ------- VARIABLES ------ */
+/* ------- MIXINS ------ */
+/* ------- FONTS ------ */
+@font-face {
+  font-family: AvenirNextRegular;
+  src: url("../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: AvenirNextBold;
+  src: url("../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: AvenirNextDemiBold;
+  src: url("../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf");
+}
+
+/* ------- GLOBAL ------ */
+* {
+  overflow-x: hidden;
+  color: #323232;
+  font-family: AvenirNextRegular;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #323232;
+  font-family: AvenirNextBold;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: AvenirNextBold;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: AvenirNextDemiBold;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: AvenirNextRegular;
+}
+
+h4,
+li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: AvenirNextRegular;
+}
+
+h5,
+th,
+td {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: AvenirNextRegular;
+}
+
+/* ------- STYLING ------ */
+.desktop {
+  display: none;
+}
+
+.inventory__container {
+  margin: 10px;
+}
+
+.inventory__container .inventory__container-header {
+  margin: 0;
+  padding: 0;
+}
+
+.inventory__container .inventory__container-header h1 {
+  margin-bottom: 0;
+}
+
+.inventory__container .inventory__container-header .inventory__search {
+  margin-top: 16px;
+  margin-bottom: 0;
+  background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  width: 180px;
+  padding: 15px 35px;
+}
+
+.inventory__container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.inventory__container table .inventory__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 24px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.inventory__container table .inventory__row .inventory__header {
+  color: #afafaf;
+}
+
+.inventory__container table .inventory__row th {
+  display: block;
+  text-align: left;
+  padding-bottom: 4px;
+}
+
+.inventory__container table .inventory__row td {
+  padding-bottom: 12px;
+}
+
+.inventory__container table .inventory__row .kebab {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: absolute;
+}
+
+@media (min-width: 600px) {
+  .desktop {
+    display: block;
+    color: #afafaf;
+    width: 25%;
+  }
+  .inventory__container {
+    margin: 32px;
+  }
+  .inventory__container .inventory__container-header {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .inventory__container .inventory__container-header h1 {
+    margin-bottom: 0;
+  }
+  .inventory__container .inventory__container-header .inventory__search {
+    margin-top: 16px;
+    margin-bottom: 0;
+    background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    width: 180px;
+    padding: 15px 35px;
+  }
+  .inventory__container table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .inventory__container table .inventory__header--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .inventory__container table th {
+    text-align: left;
+  }
+  .inventory__container table .inventory__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .inventory__container table .inventory__row .mobile {
+    display: none;
+  }
+  .inventory__container table .inventory__row td {
+    padding-right: 12px;
+    padding-bottom: 12px;
+    width: 30%;
+  }
+  .inventory__container table .inventory__row .kebab {
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

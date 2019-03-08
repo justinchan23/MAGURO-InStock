@@ -1,0 +1,242 @@
+/* ------- VARIABLES ------ */
+
+$black: #323232;
+$white: #ffffff;
+$silver: #afafaf;
+$alablaster: #fafafa;
+$mercury: #e1e1e1;
+$blue: #004892;
+$darkBlue: #002f5f;
+$regularFont: AvenirNextRegular;
+$boldFont: AvenirNextBold;
+$demiBoldFont: AvenirNextDemiBold;
+
+/* ------- MIXINS ------ */
+@mixin flex {
+  display: flex;
+}
+
+@mixin flexAndWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin colorBlack {
+  color: $black;
+}
+
+@mixin colorWhite {
+  color: $white;
+}
+
+@mixin colorSilver {
+  color: $silver;
+}
+
+@mixin maxWidth {
+  width: 100%;
+}
+
+/* ------- FONTS ------ */
+
+@font-face {
+  font-family: AvenirNextRegular;
+  src: url('../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf');
+}
+
+@font-face {
+  font-family: AvenirNextBold;
+  src: url('../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf');
+}
+
+@font-face {
+  font-family: AvenirNextDemiBold;
+  src: url('../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf');
+}
+
+/* ------- GLOBAL ------ */
+
+* {
+  overflow-x: hidden;
+  @include colorBlack;
+  font-family: $regularFont;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  @include colorBlack;
+  font-family: $boldFont;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $boldFont;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $demiBoldFont;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: $regularFont;
+}
+
+h4,
+li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $regularFont;
+}
+
+h5,
+th,
+td {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: $regularFont;
+}
+
+/* ------- STYLING ------ */
+.desktop {
+  display: none;
+}
+
+.inventory__container {
+  margin: 10px;
+
+  .inventory__container-header {
+    margin: 0;
+    padding: 0;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    .inventory__search {
+      margin-top: 16px;
+      margin-bottom: 0;
+      background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
+      background-repeat: no-repeat;
+      background-position: 5%;
+      background-color: $alablaster;
+      border: 1px solid $mercury;
+      border-radius: 2px;
+      width: 180px;
+      padding: 15px 35px;      
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    .inventory__row {
+      @include flex;
+      flex-direction: column;
+      padding: 24px 0;
+      border-bottom: 1px solid $mercury;
+
+      .inventory__header {
+        @include colorSilver;
+      }
+
+      th {
+        display: block;
+        text-align: left;
+        padding-bottom: 4px;
+      }
+
+      td {
+        padding-bottom: 12px;
+      }
+
+      .kebab {
+        align-self: flex-end;
+        position: absolute;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .desktop {
+    display: block;
+    @include colorSilver;
+    width: 25%;
+  }
+
+  .inventory__container {
+    margin: 32px;
+  
+    .inventory__container-header {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+
+      h1 {
+        margin-bottom: 0;
+      }
+  
+      .inventory__search {
+        margin-top: 16px;
+        margin-bottom: 0;
+        background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
+        background-repeat: no-repeat;
+        background-position: 5%;
+        background-color: $alablaster;
+        border: 1px solid $mercury;
+        border-radius: 2px;
+        width: 180px;
+        padding: 15px 35px;      
+      }
+    }
+  
+    table {
+      border-collapse: collapse;
+      width: 100%;
+  
+      .inventory__header--desktop {
+        display: flex;
+      }
+
+      th {
+        text-align: left;
+      }
+
+      .inventory__row {
+        @include flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px 0;
+        border-bottom: 1px solid $mercury;
+
+        .mobile {
+          display: none;
+        }
+  
+        td {
+          padding-right: 12px;
+          padding-bottom: 12px;
+          width: 30%;
+        }
+  
+        .kebab {
+          position: absolute;
+        }
+      }
+    }
+  } 
+}
+
