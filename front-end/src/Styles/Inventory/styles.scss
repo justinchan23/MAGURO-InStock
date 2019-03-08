@@ -111,12 +111,18 @@ td {
   display: none;
 }
 
+
+
 .inventory__container {
   margin: 10px;
+  @include flexAndWrap;
+  justify-content: center;
 
   .inventory__container-header {
     margin: 0;
     padding: 0;
+    width: 100%;
+    max-width: 1080px;
 
     h1 {
       margin-bottom: 0;
@@ -134,6 +140,11 @@ td {
       width: 180px;
       padding: 15px 35px;      
     }
+  }
+
+  .inventory__table {
+    width: 100%;
+    max-width: 1080px;
   }
 
   table {
@@ -233,7 +244,9 @@ td {
         }
   
         .kebab {
-          position: absolute;
+          width: auto;
+          position: relative;
+          align-self: center
         }
       }
     }
