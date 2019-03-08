@@ -226,8 +226,8 @@ td {
   background-color: #004892;
   border-radius: 50%;
   position: fixed;
-  bottom: 100px;
-  right: 150px;
+  bottom: 10%;
+  right: 15%;
   border: none;
 }
 
@@ -380,8 +380,8 @@ select:valid {
   .inventoryNew__addButton {
     width: 60px;
     height: 60px;
-    bottom: 150px;
-    right: 50px;
+    bottom: 10%;
+    right: 10%;
     border: none;
   }
 }

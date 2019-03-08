@@ -107,13 +107,22 @@ td {
 }
 
 /* ------- STYLING ------ */
+.locations__wrapper {
+  width: 100%;
+  max-width: 1080px;
+}
 
 .locations__container {
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
   .locations__container-header {
     margin: 0;
     padding: 0;
+    width: 100%;
+    max-width: 1080px;
 
     h1 {
       margin-bottom: 0;
@@ -239,10 +248,10 @@ td {
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1120px) {
   .locations__container {
     margin: 16px;
-    max-width: 1080px;
+    // max-width: 1080px;
 
     .locations__container-header {
       margin: 0;
@@ -313,8 +322,8 @@ td {
   }
 }
 
-@media (min-width: 1280px) {
-  .locations__container {
-    margin: 0 180px;
-  }
-}
+// @media (min-width: 1280px) {
+//   .locations__container {
+//     // margin: 0 180px;
+//   }
+// }
