@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import '../Styles/WarehouseDetails/WarehouseDetails.css'
+import '../Styles/Inventory/styles.css'
 import BackButton from '../Assets/Icons/SVG/Icon-back-arrow.svg'
 import { Link } from 'react-router-dom'
+import InventoryTable from './InventoryTable'
 
 class WarehouseDetail extends Component {
   render() {
@@ -40,6 +42,7 @@ class WarehouseDetail extends Component {
             </div>
           </div>
         </div>
+        <InventoryTable />
       </div>
     )
   }
