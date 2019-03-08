@@ -187,14 +187,15 @@ td {
   }
 
   .inventory__container {
-    margin: 32px;
+    margin: 20px;
   
     .inventory__container-header {
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 32px;
+      margin-bottom: 36px;
+      align-items: center;
 
       h1 {
         margin-bottom: 0;
@@ -209,7 +210,7 @@ td {
         background-color: $alablaster;
         border: 1px solid $mercury;
         border-radius: 2px;
-        width: 180px;
+        width: 20%;
         padding: 15px 35px;      
       }
     }
@@ -220,6 +221,10 @@ td {
   
       .inventory__header--desktop {
         display: flex;
+
+        .inventory__item {
+          width: 33%;
+        }
       }
 
       th {
@@ -230,17 +235,24 @@ td {
         @include flex;
         flex-direction: row;
         align-items: center;
-        padding: 24px 0;
         border-bottom: 1px solid $mercury;
+        width: 100%;
 
         .mobile {
           display: none;
         }
   
+        .inventory__item {
+          width: 39%;
+        }
+
+        .inventory__quantity {
+          padding-left: 6px;
+        }
+
         td {
-          padding-right: 12px;
           padding-bottom: 12px;
-          width: 30%;
+          width: 29%;
         }
   
         .kebab {
@@ -253,3 +265,34 @@ td {
   } 
 }
 
+@media (min-width: 1120px) {
+  .inventory__container {
+    margin: 16px;
+  
+    .inventory__container-header {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 48px;
+      align-items: center;
+
+      h1 {
+        margin-bottom: 0;
+      }
+  
+      .inventory__search {
+        margin-top: 16px;
+        margin-bottom: 0;
+        background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
+        background-repeat: no-repeat;
+        background-position: 5%;
+        background-color: $alablaster;
+        border: 1px solid $mercury;
+        border-radius: 2px;
+        width: 25%;
+        padding: 15px 35px;      
+      }
+    }
+  }  
+}
