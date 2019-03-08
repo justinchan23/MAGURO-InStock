@@ -1,11 +1,14 @@
 import React from 'react'
 import '../Styles/Inventory/styles.css'
+import { Link } from 'react-router-dom'
 
 const InventoryRow = ({ itemName, itemDes, lastOrd, location, quantity, inStock }) => (
   <tr className="inventory__row">
     <th className="inventory__header mobile">ITEM</th>
     <td className="inventory__item">
-      <b>{itemName}</b>
+      <Link to="/inventoryitemdetail">
+        <b>{itemName}</b>
+      </Link>
       <br />
       {itemDes}
     </td>
