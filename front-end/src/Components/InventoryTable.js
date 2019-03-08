@@ -13,6 +13,7 @@ const inventory = [
 ]
 
 class InventoryTable extends React.Component {
+
   render() {
     const inventoryList = inventory.map((item, id) => {
       return (
