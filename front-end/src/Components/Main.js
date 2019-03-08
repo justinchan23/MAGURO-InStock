@@ -1,13 +1,16 @@
 import React from 'react'
 // import axios from 'axios'
-import Inventory from './Inventory'
+import '../Styles/Main/main.css'
 
 const Main = () => {
-  // const apiURL = 'http://localhost:8080/'
-
   return (
-    <div>
-      <Inventory />
+    <div className="main__container">
+      <div className="main__section">
+        <div className="main__main">
+          <img src="./Logo/instock.png" alt="logo" />
+          <h2 id="main__title">Inventory Management System</h2>
+        </div>
+      </div>
     </div>
   )
 }

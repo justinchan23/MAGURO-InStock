@@ -1,0 +1,44 @@
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: calc(100% - 80px);
+  // top: 0;
+  // left: 0;
+  position: absolute;
+  flex-direction: column;
+  background-color: #004892;
+}
+
+.main__section {
+  background-color: #004892;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__main {
+  max-width: 1080px;
+  width: 100%;
+  margin-left: 24px;
+}
+
+#main__title {
+  padding-left: 15px;
+  color: white;
+}
+
+.main__footer {
+  align-self: center;
+  color: white;
+}
+
+@media screen and (max-width: 320px) {
+  .main__main {
+    margin-left: 16px;
+  }
+}

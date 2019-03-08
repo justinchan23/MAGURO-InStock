@@ -72,6 +72,11 @@ td {
   display: none;
 }
 
+.warehouse {
+  margin: 0;
+  background-color: #fafafa;
+}
+
 .inventory__container {
   margin: 10px;
   display: -webkit-box;
@@ -150,11 +155,19 @@ td {
   position: absolute;
 }
 
+.inventory__container .warehouse {
+  margin: 0;
+}
+
 @media (min-width: 600px) {
   .desktop {
     display: block;
     color: #afafaf;
     width: 25%;
+  }
+  .warehouse {
+    margin: 0;
+    padding: 0 24px;
   }
   .inventory__container {
     margin: 20px;
@@ -272,5 +285,9 @@ td {
     width: 25%;
     padding: 15px 35px;
   }
+}
+
+.warehouse {
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */

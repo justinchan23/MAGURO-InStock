@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Styles/Inventory/styles.css'
+import InventoryRow from './InventoryRow'
 
 const inventory = [
   {
@@ -14,39 +15,29 @@ const inventory = [
 
 class InventoryTable extends React.Component {
   render() {
-    const inventoryList = inventory.map((item, id) => {
+    const inventoryList = inventory.map((item, i) => {
       return (
-        <tr className='inventory__row' key={id}>
-          <th className='inventory__header mobile'>ITEM</th>
-          <td className='inventory__item'>
-            <b>{item.itemName}</b>
-            <br />
-            {item.itemDes}
-          </td>
-          <th className='inventory__header mobile'>LAST ORDERED</th>
-          <td>{item.lastOrd}</td>
-          <th className='inventory__header mobile'>LOCATION</th>
-          <td>{item.location}</td>
-          <th className='inventory__header mobile'>QUANTITY</th>
-          <td className='inventory__quantity'>{item.quantity}</td>
-          <th className='inventory__header mobile'>STATUS</th>
-          <td>{item.inStock}</td>
-          <td className='kebab'>
-            <img src='../Icons/SVG/Icon-kebab-default.svg' alt='' />
-          </td>
-        </tr>
+        <InventoryRow
+          key={i}
+          itemName={item.itemName}
+          itemDes={item.itemDes}
+          lastOrd={item.lastOrd}
+          location={item.location}
+          quantity={item.quantity}
+          inStock={item.inStock}
+        />
       )
     })
     return (
-      <div className='inventory__table'>
+      <div className="inventory__table">
         <table>
           <tbody>
-            <tr className='inventory__header--desktop'>
-              <th className='inventory__header inventory__item desktop'>ITEM</th>
-              <th className='inventory__header desktop'>LAST ORDERED</th>
-              <th className='inventory__header desktop'>LOCATION</th>
-              <th className='inventory__header desktop'>QUANTITY</th>
-              <th className='inventory__header desktop'>STATUS</th>
+            <tr className="inventory__header--desktop">
+              <th className="inventory__header inventory__item desktop">ITEM</th>
+              <th className="inventory__header desktop">LAST ORDERED</th>
+              <th className="inventory__header desktop">LOCATION</th>
+              <th className="inventory__header desktop">QUANTITY</th>
+              <th className="inventory__header desktop">STATUS</th>
             </tr>
             {inventoryList}
             {inventoryList}
