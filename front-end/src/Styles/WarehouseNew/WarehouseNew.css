@@ -348,6 +348,12 @@ select:valid {
   .warehouseNew__comment {
     width: 268px;
   }
+  .warehouseNew__name {
+    width: 268px;
+  }
+  .warehouseNew__select {
+    width: 288px;
+  }
   .warehouseNew__section {
     height: 1000px;
     margin: 0;
