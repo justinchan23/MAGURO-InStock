@@ -5,7 +5,7 @@ import BackButton from '../Assets/Icons/SVG/Icon-back-arrow.svg'
 import { Link } from 'react-router-dom'
 import InventoryTable from './InventoryTable'
 
-class WarehouseDetail extends Component {
+class WarehouseDetails extends Component {
   render() {
     return (
       <div>
@@ -51,4 +51,4 @@ class WarehouseDetail extends Component {
     )
   }
 }
-export default WarehouseDetail
+export default WarehouseDetails
