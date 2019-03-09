@@ -26,6 +26,7 @@ const WarehouseNewLocation = () => {
       !newWarehouseForm.current.quantity.value
     ) {
       alert('All fields are required unless marked.')
+      return
     }
     // const newWarehouse = {
     //   'warehouse_name': newWarehouseForm.current.warehouseName.value,

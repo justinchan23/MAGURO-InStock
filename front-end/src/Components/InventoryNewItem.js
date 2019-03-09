@@ -14,7 +14,6 @@ const InventoryNewItem = () => {
   }
 
   const addItemToggle = () => {
-    // window.scrollTo(0, 0)
     setAddStatus(true)
   }
 
@@ -27,6 +26,7 @@ const InventoryNewItem = () => {
       !newItemForm.current.quantity.value
     ) {
       alert('All fields are required unless marked.')
+      return
     }
 
     let newDate = newItemForm.current.lastOrdered.value.split('-')
