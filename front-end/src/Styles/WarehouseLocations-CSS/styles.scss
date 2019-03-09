@@ -275,7 +275,6 @@ td {
         border: 1px solid $mercury;
         border-radius: 2px;
         width: 25%;
-        // padding: 15px 35px;
       }
     }
 
@@ -292,6 +291,12 @@ td {
           text-align: left;
           width: 100%;
         }
+
+
+        .category__title {
+          margin-right: -32px;
+          margin-left: 16px;
+        }
       }
 
       .locations__row {
@@ -300,9 +305,8 @@ td {
         width: 100%;
         align-items: center;
 
-        .warehouse_title {
-          width: 25%;
-          max-width: 180px;
+        .warehouse__title {
+          width: 20%;
         }
 
 
@@ -312,16 +316,11 @@ td {
 
         td {
           text-align: left;
-          width: 25%;
-        }
-
-        .category {
-          width: 20%;
         }
 
         .img__arrow {
-          position: relative;
-          top: 0;
+          left: 1050px;
+          align-self: center;
         }
       }
     }

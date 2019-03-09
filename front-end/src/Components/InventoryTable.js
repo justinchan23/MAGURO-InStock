@@ -51,7 +51,6 @@ class InventoryTable extends React.Component {
               <th className="inventory__header desktop">STATUS</th>
             </tr>
             {inventoryList}
-            {inventoryList}
           </tbody>
         </table>
       </div>
