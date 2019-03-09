@@ -27,14 +27,18 @@ const InventoryNewItem = () => {
     ) {
       alert('All fields are required unless marked.')
     }
+
+    let newDate = newItemForm.current.lastOrdered.value.split('-')
+    newDate = newDate[1] + '/' + newDate[2] + '/' + newDate[0]
+
     const newInventoryItem = {
       name: newItemForm.current.productName.value,
-      'short-description': newItemForm.current.description.value,
-      'last-ordered': newItemForm.current.lastOrdered.value,
+      short_description: newItemForm.current.description.value,
+      last_ordered: newDate,
       city: newItemForm.current.city.value,
       country: newItemForm.current.country.value,
       quantity: newItemForm.current.quantity.value,
-      'in-stock': stockStatus
+      in_stock: stockStatus
     }
 
     axios.post(apiURL, newInventoryItem).then(response => {
@@ -75,13 +79,7 @@ const InventoryNewItem = () => {
               </label>
               <label>
                 LAST ORDERED
-                <input
-                  className="inventoryNew__name"
-                  type="text"
-                  placeholder="mm-dd-yyyy"
-                  required
-                  name="lastOrdered"
-                />
+                <input className="inventoryNew__name" type="date" required name="lastOrdered" />
               </label>
               <label>
                 CITY{' '}

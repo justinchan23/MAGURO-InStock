@@ -27,13 +27,13 @@ const WarehouseNewLocation = () => {
       alert('All fields are required unless marked.')
     }
     // const newWarehouse = {
-    //   'warehouse-name': newWarehouseForm.current.warehouseName.value,
+    //   'warehouse_name': newWarehouseForm.current.warehouseName.value,
     //   address:
     //     newWarehouseForm.current.address.value + ', ' + newWarehouseForm.current.location.value,
-    //   'contact-name': newWarehouseForm.current.contactName.value,
-    //   'contact-title': newWarehouseForm.current.position.value,
-    //   'contact-phone': newWarehouseForm.current.phoneNumber.value,
-    //   'contact-email': newWarehouseForm.current.email.value,
+    //   'contact_name': newWarehouseForm.current.contactName.value,
+    //   'contact_title': newWarehouseForm.current.position.value,
+    //   'contact_phone': newWarehouseForm.current.phoneNumber.value,
+    //   'contact_email': newWarehouseForm.current.email.value,
     //   categories: newWarehouseForm.current.categories.value
     // }
 

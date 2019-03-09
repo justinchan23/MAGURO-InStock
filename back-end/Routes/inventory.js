@@ -13,15 +13,15 @@ router.post('/', (req, res) => {
   const newInventoryItem = {
     id: faker.random.number(),
     name: req.body.name,
-    'short-description': req.body.description,
-    'long-description':
+    short_description: req.body.description,
+    long_description:
       "Here is a more detailed summary of the product name, it's uses, inductries and possible attributes that could be used to descript the product.",
-    'ordered-by': faker.name.findName(),
-    'last-ordered': req.body.last_ordered,
+    ordered_by: faker.name.findName(),
+    last_ordered: req.body.last_ordered,
     location: req.body.city + ', ' + req.body.country,
     quantity: req.body.quantity,
-    'reference-number': faker.finance.bic(),
-    'in-stock': req.body.status,
+    reference_number: faker.finance.bic(),
+    in_stock: req.body.status,
     categories: ['Industrial', 'Automotive', 'Heavy', 'Mechanical', 'Engineering', 'Sales']
   }
 
