@@ -1,5 +1,12 @@
 // General style sets
-
+.nav__ul {
+  display: flex;
+  justify-content: center;
+}
+.nav-components {
+  max-width: 1080px;
+  width: 100%;
+}
 a {
   display: inline-block;
 }
@@ -19,8 +26,6 @@ ul {
   padding: 0;
   width: 100%;
 }
-
-
 
 // Media-Queries
 
@@ -94,7 +99,6 @@ ul {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    margin: 0px 180px;
   }
   .nav-routes {
     display: flex;
