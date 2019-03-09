@@ -1,26 +1,10 @@
 import React from 'react'
 import '../Styles/Inventory/styles.css'
 import InventoryRow from './InventoryRow'
-import axios from 'axios'
-
-const url = 'http://localhost:8080/inventory'
 
 class InventoryTable extends React.Component {
-  state = {
-    inventory: [],
-    id: ''
-  }
-
-  componentDidMount() {
-    axios.get(url).then(response => {
-      this.setState({
-        inventory: response.data
-      })
-    })
-  }
-
   render() {
-    const inventoryList = this.state.inventory.map((item, i) => {
+    const inventoryList = this.props.inventory.map((item, i) => {
       var inStock = 'In Stock'
 
       if (item.in_stock === false) {
