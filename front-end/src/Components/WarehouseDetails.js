@@ -11,14 +11,14 @@ class WarehouseDetail extends Component {
     id: this.state.id,
     currentdata: []
   }
-  componentDidMount() {
-    this.getWarehouseName()
-  }
-  getWarehouseName = () => {
-    axios.get(`http://localhost:8080/warehouses/${id}`).then(response => {
-      this.setState({ currentdata: response.data })
-    })
-  }
+  // componentDidMount() {
+  //   this.getWarehouseName()
+  // }
+  // getWarehouseName = () => {
+  //   axios.get(`http://localhost:8080/warehouses/${id}`).then(response => {
+  //     this.setState({ currentdata: response.data })
+  //   })
+  // }
 
   render() {
     return (
