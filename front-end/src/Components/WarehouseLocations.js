@@ -29,7 +29,7 @@ class WarehouseLocations extends React.Component {
           <td className='warehouse__title'>
             <b>{warehouse.warehouse_name}</b>
             <br />
-            {warehouse.address + " " + warehouse.postal_code + " " + warehouse.country_code}
+            {warehouse.address}
           </td>
           <td className='padding__info'>
             {warehouse.contact_name}
@@ -65,7 +65,6 @@ class WarehouseLocations extends React.Component {
                 <th className='locations__title-desktop contact__info'>CONTACT INFORMATION</th>
                 <th className='locations__title-desktop'>CATEGORIES</th>
               </tr>
-              {warehouseList}
               {warehouseList}
             </tbody>
           </table>
