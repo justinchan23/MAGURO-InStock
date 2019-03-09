@@ -6,23 +6,23 @@ import { Link } from 'react-router-dom'
 import InventoryTable from './InventoryTable'
 import axios from 'axios'
 
-class WarehouseDetail extends Component {
+class WarehouseDetails extends Component {
   state = {
-    id: this.state.id,
     currentdata: []
   }
-  // componentDidMount() {
-  //   this.getWarehouseName()
-  // }
-  // getWarehouseName = () => {
-  //   axios.get(`http://localhost:8080/warehouses/${id}`).then(response => {
-  //     this.setState({ currentdata: response.data })
-  //   })
-  // }
+  componentDidMount() {
+    this.getWarehouseName()
+  }
+  getWarehouseName = () => {
+    axios.get(`http://localhost:8080/warehouses/${this.props.match.params.id}`).then(response => {
+      this.setState({ currentdata: response.data })
+    })
+  }
 
   render() {
     return (
       <div>
+        <div className='cd__top__general'>
         <div className='cd'>
           <div className='cd__one'>
             <Link to='/warehouses'>
@@ -57,6 +57,7 @@ class WarehouseDetail extends Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
         <div className='inventory__container warehouse'>
           <InventoryTable />
