@@ -3,6 +3,10 @@ const router = express.Router()
 const fs = require('fs')
 const data = require('../Database/warehouses')
 
+router.get('/', (req, res) => {
+  res.send(data)
+})
+
 router.get('/:id', (req, res) => {
   const warehouseInventory = data.find(warehouse => {
     return warehouse.id == req.params.id
