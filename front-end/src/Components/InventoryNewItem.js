@@ -14,6 +14,7 @@ const InventoryNewItem = () => {
   }
 
   const addItemToggle = () => {
+    // window.scrollTo(0, 0)
     setAddStatus(true)
   }
 
