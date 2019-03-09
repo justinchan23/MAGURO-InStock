@@ -344,6 +344,12 @@ select:valid {
   .inventoryNew__comment {
     width: 268px;
   }
+  .inventoryNew__name {
+    width: 268px;
+  }
+  .inventoryNew__select {
+    width: 288px;
+  }
   .inventoryNew__section {
     height: 1000px;
     margin: 0;

@@ -7,7 +7,7 @@ class Nav extends Component {
   render() {
     return (
       <nav className='navbar'>
-        <ul>
+        <ul className='nav__ul'>
           <div className='nav-components'>
             <Link to='/'>
               <li className='nav-logo'>
