@@ -3,6 +3,11 @@ const router = express.Router()
 const fs = require('fs')
 const inventory = require('../Database/inventory')
 const faker = require('faker')
+const data = require('../Database/inventory')
+
+router.get('/', (req, res) => {
+  res.json(data)
+})
 
 router.post('/', (req, res) => {
   const newInventoryItem = {
