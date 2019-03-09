@@ -221,15 +221,16 @@ td {
     border-bottom: 1px solid #e1e1e1;
     width: 100%;
   }
+  .locations__container table .locations__row td {
+    width: 20%;
+  }
   .locations__container table .locations__row .warehouse__title {
     width: 100%;
-  }
-  .locations__container table .locations__row .category {
-    width: 30%;
   }
   .locations__container table .locations__row .img__arrow {
     position: relative;
     top: -45px;
+    left: 80px;
   }
 }
 
@@ -263,7 +264,6 @@ td {
     border: 1px solid #e1e1e1;
     border-radius: 2px;
     width: 25%;
-    padding: 15px 35px;
   }
   .locations__container table .locations__titles {
     display: -webkit-box;
@@ -274,22 +274,30 @@ td {
     color: #afafaf;
     display: block;
   }
-  .locations__container table .locations__titles .warehouse {
-    padding-right: 190px;
-  }
-  .locations__container table .locations__titles .contact {
-    padding-right: 170px;
-  }
-  .locations__container table .locations__titles .contact__info {
-    padding-right: 100px;
-  }
-  .locations__container table .locations__row {
-    border-bottom: 1px solid #e1e1e1;
+  .locations__container table .locations__titles th {
+    text-align: left;
     width: 100%;
   }
-  .locations__container table .locations__row .warehouse__title {
-    width: 14%;
-    padding-bottom: 16px;
+  .locations__container table .locations__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .locations__container table .locations__row .warehouse_title {
+    width: 25%;
+    max-width: 180px;
+  }
+  .locations__container table .locations__row .padding__info {
+    padding-right: 24px;
+  }
+  .locations__container table .locations__row td {
+    text-align: left;
+    width: 25%;
   }
   .locations__container table .locations__row .category {
     width: 20%;

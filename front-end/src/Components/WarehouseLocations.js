@@ -2,38 +2,44 @@ import React from 'react'
 import '../Styles/WarehouseLocations-CSS/styles.css'
 import WarehouseNewLocation from './WarehouseNewLocation'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
-const warehouses = [
-  {
-    name: 'Warehouse Number 1',
-    address: '469 King St W, Toronto, ON',
-    ContactName: 'Mara Weinberg',
-    ContactPosition: 'Warehouse Manager',
-    ContactNumber: '+1 416 678 2345',
-    ContactEmail: 'weinberg@instack.com',
-    categories: 'Industrial, Automotive, Heavy, Mechanical, Engineering'
-  }
-]
+const url = "http://localhost:8080/warehouses"
 
 class WarehouseLocations extends React.Component {
+  state = {
+    warehouses: [],
+    id: ""
+  }
+
+  componentDidMount() {
+    axios.get(url) 
+      .then(response => {
+        this.setState({
+          warehouses: response.data,
+          id: response.data.id
+        })
+      })
+  }
+
   render() {
-    const warehouseList = warehouses.map((warehouse, id) => {
+    const warehouseList = this.state.warehouses.map((warehouse, id) => {
       return (
         <tr className='locations__row' key={id}>
           <td className='warehouse__title'>
-            <b>{warehouse.name}</b>
+            <b>{warehouse.warehouse_name}</b>
             <br />
-            {warehouse.address}
+            {warehouse.address + " " + warehouse.postal_code + " " + warehouse.country_code}
           </td>
           <td className='padding__info'>
-            {warehouse.ContactName}
+            {warehouse.contact_name}
             <br />
-            <i>{warehouse.ContactPosition}</i>
+            <i>{warehouse.contact_title}</i>
           </td>
           <td className='padding__info'>
-            {warehouse.ContactNumber}
+            {warehouse.contact_phone}
             <br />
-            {warehouse.ContactEmail}
+            {warehouse.contact_email}
           </td>
           <td className='warehouse__category padding__info category'>{warehouse.categories}</td>
           <td className='img__arrow'>
