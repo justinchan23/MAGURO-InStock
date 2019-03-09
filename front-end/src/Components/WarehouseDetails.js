@@ -65,4 +65,4 @@ class WarehouseDetail extends Component {
     )
   }
 }
-export default WarehouseDetail
+export default WarehouseDetails
