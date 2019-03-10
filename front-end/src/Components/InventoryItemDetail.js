@@ -30,7 +30,7 @@ class InventoryItemDetail extends Component {
         <div className='iid__desk'>
           <div className='iid__two'>
             <h4 className='iid__header'>ITEM DESCRIPTION</h4>
-            <p className='iid__info__two'>{this.state.short_description}</p>
+            <p className='iid__info__two'>{this.state.itemDetails.short_description}</p>
           </div>
           <div>
             <div className='iid__info__chunk'>
