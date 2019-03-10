@@ -12,7 +12,7 @@ router.get('/:id', (req, res) => {
     return warehouse.id == req.params.id
   })
   warehouseInventory
-    ? res.send(warehouseInventory.inventory)
+    ? res.send(warehouseInventory)
     : res.status(404).send('That item does not exist')
 })
 

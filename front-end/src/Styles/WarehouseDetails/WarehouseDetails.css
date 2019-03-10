@@ -1,6 +1,15 @@
+.cd__top__general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .cd {
-  margin: 0px 20px;
   max-width: 1080px;
+  width: 100%;
 }
 
 .cd__one {
@@ -34,6 +43,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 450px) {
+  .cd {
+    margin: 0px 16px;
+  }
   .cd__hr {
     display: none;
   }
@@ -85,6 +97,9 @@
 }
 
 @media screen and (min-width: 451px) and (max-width: 1199px) {
+  .cd {
+    margin: 0px 24px;
+  }
   .cd__one {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -140,9 +155,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .cd {
-    margin: 0px 180px;
-  }
   .cd__one {
     display: -webkit-box;
     display: -ms-flexbox;
