@@ -1,8 +1,12 @@
 import React from 'react'
 import '../Styles/Inventory/styles.css'
 import { Link } from 'react-router-dom'
+import InventoryRmvBtn from './InventoryRmvBtn'
+
+
 
 const InventoryRow = ({ itemName, itemDes, lastOrd, location, quantity, inStock, id }) => (
+
   <tr className="inventory__row">
     <th className="inventory__header mobile">ITEM</th>
     <td className="inventory__item">
@@ -21,7 +25,8 @@ const InventoryRow = ({ itemName, itemDes, lastOrd, location, quantity, inStock,
     <th className="inventory__header mobile">STATUS</th>
     <td>{inStock}</td>
     <td className="kebab">
-      <img src="../Icons/SVG/Icon-kebab-default.svg" alt="" />
+      <InventoryRmvBtn />
+      {/* <img src="../Icons/SVG/Icon-kebab-default.svg" alt="remove" /> */}
     </td>
   </tr>
 )
