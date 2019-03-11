@@ -13,7 +13,6 @@ const WarehouseNewLocation = () => {
   }
 
   const addWarehouseToggle = () => {
-    // window.scrollTo(0, 0)
     setAddWarehouseStatus(true)
   }
 
