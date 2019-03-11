@@ -24,7 +24,7 @@ for (i = 0; i < 10; i++) {
 }
 
 // newItem = {
-//   id: fake.finance.mask(),
+//   id: faker.finance.mask(),
 //   name: faker.commerce.productName(),
 //   'short-description': 'Here is a very brief description of the product',
 //   'long-description':
