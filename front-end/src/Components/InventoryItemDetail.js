@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../Styles/InventoryItemDetail/InventoryItemDetail.css'
 import BackButton from '../Assets/Icons/SVG/Icon-back-arrow.svg'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 class InventoryItemDetail extends Component {
