@@ -118,6 +118,7 @@ a {
 
 .warehouse {
   margin: 0;
+  padding: 0 16px 0 16px;
   background-color: $alablaster;
 }
 
@@ -187,6 +188,7 @@ a {
   }
   .warehouse {
     margin: 0;
+    padding: 24px 16px 0 16px;
   }
 }
 
@@ -198,7 +200,7 @@ a {
   }
   .warehouse {
     margin: 0;
-    padding: 0 24px;
+    padding: 24px 16px 0 16px;
   }
   .inventory__container {
     margin: 20px;
