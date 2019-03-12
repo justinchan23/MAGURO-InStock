@@ -5,7 +5,7 @@ import InventoryRow from './InventoryRow'
 class InventoryTable extends React.Component {
   render() {
     const inventoryList = this.props.inventory.map((item, i) => {
-      var inStock = 'In Stock'
+      let inStock = 'In Stock'
 
       if (item.in_stock === false) {
         inStock = 'Out of Stock'
