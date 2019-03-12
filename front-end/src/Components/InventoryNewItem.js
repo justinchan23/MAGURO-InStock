@@ -3,7 +3,7 @@ import '../Styles/InventoryNewItem/InventoryNew.css'
 import Switch from 'react-switch'
 import axios from 'axios'
 
-const InventoryNewItem = () => {
+const InventoryNewItem = ({ getInventory }) => {
   const [stockStatus, setStockStatus] = useState(true)
   const newItemForm = useRef()
   const [addStatus, setAddStatus] = useState(false)
@@ -26,21 +26,27 @@ const InventoryNewItem = () => {
       !newItemForm.current.quantity.value
     ) {
       alert('All fields are required unless marked.')
+      return
     }
+
+    let newDate = newItemForm.current.lastOrdered.value.split('-')
+    newDate = newDate[1] + '/' + newDate[2] + '/' + newDate[0]
+
     const newInventoryItem = {
       name: newItemForm.current.productName.value,
-      'short-description': newItemForm.current.description.value,
-      'last-ordered': newItemForm.current.lastOrdered.value,
+      short_description: newItemForm.current.description.value,
+      last_ordered: newDate,
       city: newItemForm.current.city.value,
       country: newItemForm.current.country.value,
       quantity: newItemForm.current.quantity.value,
-      'in-stock': stockStatus
+      in_stock: stockStatus
     }
 
     axios.post(apiURL, newInventoryItem).then(response => {
       console.log(response)
       if (response.status === 200) {
         alert('Item successfully added')
+        getInventory()
         newItemForm.current.reset()
         setAddStatus(false)
       } else {
@@ -75,13 +81,7 @@ const InventoryNewItem = () => {
               </label>
               <label>
                 LAST ORDERED
-                <input
-                  className="inventoryNew__name"
-                  type="text"
-                  placeholder="mm-dd-yyyy"
-                  required
-                  name="lastOrdered"
-                />
+                <input className="inventoryNew__name" type="date" required name="lastOrdered" />
               </label>
               <label>
                 CITY{' '}

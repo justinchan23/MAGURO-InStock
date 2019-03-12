@@ -45,6 +45,10 @@ iid__one__title {
   margin: 0px;
 }
 
+.iid__backbutton:hover {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 320px) and (max-width: 450px) {
   .iid__one {
     display: -webkit-box;

@@ -94,7 +94,7 @@ td {
           justify-content: center;
   max-height: 100%;
   max-width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -144,7 +144,7 @@ td {
           flex-direction: column;
   border-radius: 4px;
   padding: 24px 48px 0 48px;
-  height: 700px;
+  height: 680px;
   background-color: #ffffff;
 }
 
