@@ -113,3 +113,41 @@ td {
   line-height: 20px;
   font-family: $regularFont;
 }
+
+/* ------- STYLING ------ */
+
+.toggleContainer {
+  .toggleBtn {
+    border: none;
+    margin-left: 150px;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.removeBtn {
+  position: absolute;
+  border: 1px solid $mercury;
+  top: 25px;
+  right: 15px;
+  height: 45px;
+  width: 150px;
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  .toggleContainer {
+    .toggleBtn {
+      border: none;
+      margin: auto;
+    }
+  }
+
+  .removeBtn {
+    position: absolute;
+    border: 1px solid $mercury;
+    top: 25px;
+    height: 45px;
+    text-align: left;
+  }
+}
