@@ -214,9 +214,11 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: 20px;
   }
   .inventory__container table .inventory__header--desktop .inventory__item {
     width: 33%;
+    margin-right: 25px;
   }
   .inventory__container table th {
     text-align: left;
@@ -240,6 +242,9 @@ a {
   }
   .inventory__container table .inventory__row .inventory__item {
     width: 39%;
+    margin-right: 25px;
+    height: 40px;
+    overflow: auto;
   }
   .inventory__container table .inventory__row .inventory__quantity {
     padding-left: 6px;

@@ -237,9 +237,11 @@ a {
 
       .inventory__header--desktop {
         display: flex;
+        margin-right: 20px;
 
         .inventory__item {
           width: 33%;
+          margin-right: 25px;
         }
       }
 
@@ -260,6 +262,9 @@ a {
 
         .inventory__item {
           width: 39%;
+          margin-right: 25px;
+          height: 40px;
+          overflow: auto;
         }
 
         .inventory__quantity {
