@@ -51,4 +51,12 @@ router.get('/:id', (req, res) => {
   inventoryItem ? res.send(inventoryItem) : res.status(404).send('Item not found')
 })
 
+router.delete('/:id', (req, res) => {
+  const inventoryIndex = inventory.findIndex(item => {
+    return item.id == req.params.id
+  })
+  inventory.splice(inventoryIndex, 1)
+  res.send('Item has been deleted')
+})
+
 module.exports = router
