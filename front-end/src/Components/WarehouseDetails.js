@@ -31,7 +31,7 @@ class WarehouseDetails extends Component {
                 <Link to="/warehouses">
                   <img className="cd__backbutton" src={BackButton} alt="backbutton" />
                 </Link>
-                <h1 className='cd__one__title'>{this.state.currentdata.name}</h1>
+                <h1 className='cd__one__title'>{this.state.currentdata.warehouse_name}</h1>
           </div>
           <hr className='cd__hr' />
           <div className='cd__desk'>

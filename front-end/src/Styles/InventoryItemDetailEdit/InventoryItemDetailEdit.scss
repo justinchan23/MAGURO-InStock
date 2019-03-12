@@ -1,0 +1,263 @@
+$black: #323232;
+$white: #ffffff;
+$silver: #afafaf;
+$alablaster: #fafafa;
+$mercury: #e1e1e1;
+$blue: #004892;
+$darkblue: #002f5f;
+$green: rgb(106, 174, 43);
+$regularFont: AvenirNextRegular;
+$boldFont: AvenirNextBold;
+$demiBoldFont: AvenirNextDemiBold;
+
+.iide {
+    max-width: 1080px;
+    width: 100%;
+}
+.iide__one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+iide__one__title {
+  padding: 0px;
+  font-size: 20px;
+}
+.iide__header {
+  color: #afafaf;
+  padding: 0px;
+  font-size: 14px;
+  margin: 0px;
+}
+.iide__info {
+    color: #323232;
+    padding: 0px;
+    margin: 0px;
+  }
+.iide__description__container {
+  display: flex;
+  flex-direction: column;
+}
+.iide__categories__container {
+  display: flex;
+  flex-direction: column;
+}
+.iide__toggle__container {
+  display: flex;
+  flex-direction: column;
+}
+.iide__stock {
+  display: flex;
+  align-items: center;
+}
+.iide__button__save {
+  background-color: $blue;
+  color: white;
+  border-radius: 3px;
+}
+.iide__button__cancel {
+  color: $blue;
+}
+
+select {
+  display: block;
+  border: 1px $mercury solid;
+  border-radius: 2px;
+  height: 20px;
+  width: 288px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .iide__one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+  }
+  .iide__desk {
+    width: 100%;
+  }
+
+  .iide__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .iide__block__bottom {
+    width: 100%;
+  }
+  .iide__backbutton {
+    display: none;
+  }
+  .iide__info {
+    margin: 0px 0px 24px 0px;
+  }
+  .iide__sub {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .iide__info__chunk {
+    display: flex;
+    flex-direction: column;
+  }
+  .iide__button {
+    height: 50px;
+    width: 288px;
+    background-color: rgb(8, 74, 144);
+    color: white;
+    border-radius: 5px;
+  }
+  .iide__description {
+    border: 1px $mercury solid;
+    border-radius: 3px;
+    height: 110px;
+    width: 70%;
+  }
+  .iide__input {
+    display: block;
+    border: 1px $mercury solid;
+    height: 35px;
+    width: 50%;
+  }
+  .iide__input__categories {
+    border: 1px $mercury solid;
+    border-radius: 3px;
+    height: 55px;
+    width: 70%;
+  }
+  .iide__button__save {
+    width: 288px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 1199px) {
+  .iide__one {
+    display: flex;
+    justify-content: left;
+    height: 80px;
+  }
+  .iide__two {
+    width: 70%;
+  }
+  .iide__backbutton {
+    margin: 0px 25px 0px 0px;
+  }
+  .iide__one__title {
+    margin: 0px 25px 0px 0px;
+  }
+  .iide__hr {
+    margin: 0px 0px 30px 0px;
+  }
+  .iide__info {
+    height: 60px;
+  }
+  .iide__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+  }
+  .iide__block__status {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 58%;
+  }
+  .iide__info__chunk {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px 0px 0px;
+  }
+  .iide__button {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(8, 74, 144);
+    color: white;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .iide {
+    margin: 0px 180px;
+  }
+  .iide__one {
+    display: flex;
+    justify-content: left;
+    height: 80px;
+  }
+  .iide__form {
+    display: flex;
+    flex-direction: row;
+  }
+  .iide__description__container {
+      width: 50%
+  }
+  .iide__desk__two {
+      width: 50%
+  }
+  .iide__description {
+      width: 512px;
+      height: 110px;
+  }
+  .iide__input {
+      height: 30px;
+  }
+  .iide__select {
+      width: 205px;
+  }
+  .iide__backbutton {
+    margin: 0px 25px 0px 0px;
+  }
+  .iide__info__chunk {
+    display: flex;
+    flex-direction: row;
+  }
+  .iid__one__title {
+    margin: 0px 25px 0px 0px;
+  }
+  .iide__hr {
+    margin: 0px 0px 30px 0px;
+  }
+  .iide__two {
+    width: 50%;
+  }
+  .iide__info__two {
+    width: 80%;
+  }
+  .iide__info {
+    height: 60px;
+  }
+  .iide__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .iide__block__status {
+      display: flex;
+      flex-direction: row;
+    
+  }
+  .iide__toggle__container {
+      margin: 0px 0px 0px 40px;
+  }
+  .iide__input__categories {
+      width: 475px;
+      height: 90px;
+  }
+  .iide__button {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(8, 74, 144);
+    color: white;
+    border-radius: 5px;
+  }
+  .iide__block__button {
+    float: right;
+  }
+}

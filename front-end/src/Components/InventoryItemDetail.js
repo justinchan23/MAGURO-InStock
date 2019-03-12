@@ -23,7 +23,7 @@ class InventoryItemDetail extends Component {
           <Link to='/inventory'>
             <img className='iid__backbutton' src={BackButton} alt='backbutton' />
           </Link>
-          <h2 className='iid__one__title'>{this.state.name}</h2>
+          <h2 className='iid__one__title'>{this.state.itemDetails.name}</h2>
           <button className='iid__one__button'>In Stock</button>
         </div>
         <hr className='iid__hr' />
