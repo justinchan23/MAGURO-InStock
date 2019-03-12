@@ -1,0 +1,153 @@
+/* ------- VARIABLES ------ */
+
+$black: #323232;
+$white: #ffffff;
+$silver: #afafaf;
+$alablaster: #fafafa;
+$mercury: #e1e1e1;
+$blue: #004892;
+$darkblue: #002f5f;
+$green: rgb(106, 174, 43);
+$regularFont: AvenirNextRegular;
+$boldFont: AvenirNextBold;
+$demiBoldFont: AvenirNextDemiBold;
+
+/* ------- MIXINS ------ */
+@mixin flex {
+  display: flex;
+}
+
+@mixin flexAndWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin colorBlack {
+  color: $black;
+}
+
+@mixin colorWhite {
+  color: $white;
+}
+
+@mixin colorSilver {
+  color: $silver;
+}
+
+@mixin marginZero {
+  margin: 0;
+}
+
+@mixin maxWidth {
+  width: 100%;
+}
+
+/* ------- FONTS ------ */
+
+@font-face {
+  font-family: AvenirNextRegular;
+  src: url('../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf');
+}
+
+@font-face {
+  font-family: AvenirNextBold;
+  src: url('../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf');
+}
+
+@font-face {
+  font-family: AvenirNextDemiBold;
+  src: url('../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf');
+}
+
+/* ------- GLOBAL ------ */
+
+* {
+  overflow-x: hidden;
+  @include colorBlack;
+  font-family: $regularFont;
+}
+
+body {
+  @include marginZero;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+
+  font-family: $boldFont;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $boldFont;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $demiBoldFont;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: $regularFont;
+}
+
+h4,
+li {
+  font-size: 14px;
+  line-height: 20px;
+  @include colorWhite;
+  font-family: $regularFont;
+}
+
+h5,
+th,
+td {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: $regularFont;
+}
+
+/* ------- STYLING ------ */
+
+.toggleContainer {
+  .toggleBtn {
+    border: none;
+    margin-left: 150px;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.removeBtn {
+  position: absolute;
+  border: 1px solid $mercury;
+  top: 25px;
+  right: 15px;
+  height: 45px;
+  width: 150px;
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  .toggleContainer {
+    .toggleBtn {
+      border: none;
+      margin: auto;
+    }
+  }
+
+  .removeBtn {
+    position: absolute;
+    border: 1px solid $mercury;
+    top: 25px;
+    height: 45px;
+    text-align: left;
+  }
+}
