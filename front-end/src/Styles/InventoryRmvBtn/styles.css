@@ -1,0 +1,103 @@
+/* ------- VARIABLES ------ */
+/* ------- MIXINS ------ */
+/* ------- FONTS ------ */
+@font-face {
+  font-family: AvenirNextRegular;
+  src: url("../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: AvenirNextBold;
+  src: url("../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: AvenirNextDemiBold;
+  src: url("../../Assets/Fonts/AvenirNextProLT/AvenirNextLTPro-Demi.otf");
+}
+
+/* ------- GLOBAL ------ */
+* {
+  overflow-x: hidden;
+  color: #323232;
+  font-family: AvenirNextRegular;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  font-family: AvenirNextBold;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: AvenirNextBold;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: AvenirNextDemiBold;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: AvenirNextRegular;
+}
+
+h4,
+li {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: AvenirNextRegular;
+}
+
+h5,
+th,
+td {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: AvenirNextRegular;
+}
+
+/* ------- STYLING ------ */
+.toggleContainer .toggleBtn {
+  border: none;
+  margin-left: 150px;
+  outline: none;
+  cursor: pointer;
+}
+
+.removeBtn {
+  position: absolute;
+  border: 1px solid #e1e1e1;
+  top: 25px;
+  right: 15px;
+  height: 45px;
+  width: 150px;
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  .toggleContainer .toggleBtn {
+    border: none;
+    margin: auto;
+  }
+  .removeBtn {
+    position: absolute;
+    border: 1px solid #e1e1e1;
+    top: 25px;
+    height: 45px;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

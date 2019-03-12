@@ -157,6 +157,7 @@ a {
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: absolute;
+  overflow-x: visible;
 }
 
 .inventory__container .warehouse {
@@ -253,6 +254,7 @@ a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    overflow-x: visible;
   }
 }
 
