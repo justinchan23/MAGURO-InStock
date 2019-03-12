@@ -56,6 +56,8 @@ router.delete('/:id', (req, res) => {
     return item.id == req.params.id
   })
   inventory.splice(inventoryIndex, 1)
+  // uncomment next line for production
+  // fs.writeFileSync('../Database/inventory.json', JSON.stringify(inventory))
   res.send('Item has been deleted')
 })
 
