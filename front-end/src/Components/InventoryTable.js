@@ -12,6 +12,8 @@ class InventoryTable extends React.Component {
       }
       return (
         <InventoryRow
+          removeItem={this.props.removeItem}
+          getInventory={this.props.getInventory}
           key={i}
           itemName={item.name}
           itemDes={item.short_description}
@@ -24,15 +26,15 @@ class InventoryTable extends React.Component {
       )
     })
     return (
-      <div className="inventory__table">
+      <div className='inventory__table'>
         <table>
           <tbody>
-            <tr className="inventory__header--desktop">
-              <th className="inventory__header inventory__item desktop">ITEM</th>
-              <th className="inventory__header desktop">LAST ORDERED</th>
-              <th className="inventory__header desktop">LOCATION</th>
-              <th className="inventory__header desktop">QUANTITY</th>
-              <th className="inventory__header desktop">STATUS</th>
+            <tr className='inventory__header--desktop'>
+              <th className='inventory__header inventory__item desktop'>ITEM</th>
+              <th className='inventory__header desktop'>LAST ORDERED</th>
+              <th className='inventory__header desktop'>LOCATION</th>
+              <th className='inventory__header desktop'>QUANTITY</th>
+              <th className='inventory__header desktop'>STATUS</th>
             </tr>
             {inventoryList}
           </tbody>
