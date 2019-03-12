@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react'
 import '../Styles/WarehouseNew/WarehouseNew.css'
-// import axios from 'axios'
+import axios from 'axios'
 
-const WarehouseNewLocation = () => {
+const WarehouseNewLocation = ({ getWarehouses }) => {
   const [addWarehouseStatus, setAddWarehouseStatus] = useState(false)
   const newWarehouseForm = useRef()
-  // const apiURL = 'http://localhost:8080/warehouses'
+  const apiURL = 'http://localhost:8080/warehouses'
 
   const cancelAdd = () => {
     newWarehouseForm.current.reset()
@@ -18,35 +18,39 @@ const WarehouseNewLocation = () => {
 
   const addWarehouse = () => {
     if (
-      !newWarehouseForm.current.productName.value ||
-      !newWarehouseForm.current.lastOrdered.value ||
-      !newWarehouseForm.current.city.value ||
-      !newWarehouseForm.current.country.value ||
-      !newWarehouseForm.current.quantity.value
+      !newWarehouseForm.current.warehouseName.value ||
+      !newWarehouseForm.current.address.value ||
+      !newWarehouseForm.current.location.value ||
+      !newWarehouseForm.current.contactName.value ||
+      !newWarehouseForm.current.position.value ||
+      !newWarehouseForm.current.phoneNumber.value ||
+      !newWarehouseForm.current.email.value ||
+      !newWarehouseForm.current.categories.value
     ) {
       alert('All fields are required unless marked.')
+      return
     }
-    // const newWarehouse = {
-    //   'warehouse-name': newWarehouseForm.current.warehouseName.value,
-    //   address:
-    //     newWarehouseForm.current.address.value + ', ' + newWarehouseForm.current.location.value,
-    //   'contact-name': newWarehouseForm.current.contactName.value,
-    //   'contact-title': newWarehouseForm.current.position.value,
-    //   'contact-phone': newWarehouseForm.current.phoneNumber.value,
-    //   'contact-email': newWarehouseForm.current.email.value,
-    //   categories: newWarehouseForm.current.categories.value
-    // }
+    const newWarehouse = {
+      warehouse_name: newWarehouseForm.current.warehouseName.value,
+      address:
+        newWarehouseForm.current.address.value + ', ' + newWarehouseForm.current.location.value,
+      contact_name: newWarehouseForm.current.contactName.value,
+      contact_title: newWarehouseForm.current.position.value,
+      contact_phone: newWarehouseForm.current.phoneNumber.value,
+      contact_email: newWarehouseForm.current.email.value,
+      categories: newWarehouseForm.current.categories.value
+    }
 
-    // axios.post(apiURL, newWarehouse).then(response => {
-    //   console.log(response)
-    //   if (response.status === 200) {
-    //     alert('Item successfully added')
-    //     newWarehouseForm.current.reset()
-    //     setAddWarehouseStatus(false)
-    //   } else {
-    //     alert('Error adding item. Please try again.')
-    //   }
-    // })
+    axios.post(apiURL, newWarehouse).then(response => {
+      if (response.status === 200) {
+        alert('Item successfully added')
+        newWarehouseForm.current.reset()
+        setAddWarehouseStatus(false)
+        getWarehouses()
+      } else {
+        alert('Error adding item. Please try again.')
+      }
+    })
   }
 
   useEffect(() => {}, [addWarehouseStatus])

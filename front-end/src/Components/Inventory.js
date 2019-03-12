@@ -31,17 +31,17 @@ class Inventory extends React.Component {
 
   render() {
     return (
-      <div className='inventory__container'>
-        <div className='inventory__container-header'>
+      <div className="inventory__container">
+        <div className="inventory__container-header">
           <h1>Inventory</h1>
-          <input type='text' placeholder='Search' className='inventory__search' alt='search' />
+          <input type="text" placeholder="Search" className="inventory__search" alt="search" />
         </div>
         <InventoryTable
           inventory={this.state.inventory}
           getInventory={this.getInventory}
           removeItem={this.removeItem}
         />
-        <InventoryNewItem />
+        <InventoryNewItem getInventory={this.getInventory} />
       </div>
     )
   }
