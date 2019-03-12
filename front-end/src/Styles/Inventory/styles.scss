@@ -170,6 +170,7 @@ a {
         @include colorSilver;
       }
 
+
       th {
         display: block;
         text-align: left;
@@ -183,6 +184,7 @@ a {
       .kebab {
         align-self: flex-end;
         position: absolute;
+        overflow-x: visible;
       }
     }
   }
@@ -275,6 +277,7 @@ a {
           width: auto;
           position: relative;
           align-self: center;
+          overflow-x: visible;
         }
       }
     }
