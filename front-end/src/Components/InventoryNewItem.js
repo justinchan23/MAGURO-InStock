@@ -3,7 +3,7 @@ import '../Styles/InventoryNewItem/InventoryNew.css'
 import Switch from 'react-switch'
 import axios from 'axios'
 
-const InventoryNewItem = () => {
+const InventoryNewItem = ({ getInventory }) => {
   const [stockStatus, setStockStatus] = useState(true)
   const newItemForm = useRef()
   const [addStatus, setAddStatus] = useState(false)
@@ -46,6 +46,7 @@ const InventoryNewItem = () => {
       console.log(response)
       if (response.status === 200) {
         alert('Item successfully added')
+        getInventory()
         newItemForm.current.reset()
         setAddStatus(false)
       } else {
