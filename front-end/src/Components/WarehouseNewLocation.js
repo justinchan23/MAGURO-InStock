@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import '../Styles/WarehouseNew/WarehouseNew.css'
 import axios from 'axios'
 
-const WarehouseNewLocation = () => {
+const WarehouseNewLocation = ({ getWarehouses }) => {
   const [addWarehouseStatus, setAddWarehouseStatus] = useState(false)
   const newWarehouseForm = useRef()
   const apiURL = 'http://localhost:8080/warehouses'
@@ -42,11 +42,11 @@ const WarehouseNewLocation = () => {
     }
 
     axios.post(apiURL, newWarehouse).then(response => {
-      console.log(response)
       if (response.status === 200) {
         alert('Item successfully added')
         newWarehouseForm.current.reset()
         setAddWarehouseStatus(false)
+        getWarehouses()
       } else {
         alert('Error adding item. Please try again.')
       }

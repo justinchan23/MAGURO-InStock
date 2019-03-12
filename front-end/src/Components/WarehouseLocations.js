@@ -12,19 +12,22 @@ class WarehouseLocations extends React.Component {
     id: ''
   }
 
-  componentDidMount() {
+  getWarehouses = () => {
     axios.get(url).then(response => {
       this.setState({
-        warehouses: response.data,
-        id: response.data.id
+        warehouses: response.data
       })
     })
   }
 
+  componentDidMount() {
+    this.getWarehouses()
+  }
+
   render() {
-    const warehouseList = this.state.warehouses.map((warehouse, id) => {
+    const warehouseList = this.state.warehouses.map((warehouse, i) => {
       return (
-        <tr className="locations__row" key={id}>
+        <tr className="locations__row" key={i}>
           <td className="warehouse__title">
             <b>{warehouse.warehouse_name}</b>
             <br />
@@ -68,7 +71,7 @@ class WarehouseLocations extends React.Component {
             </tbody>
           </table>
         </div>
-        <WarehouseNewLocation />
+        <WarehouseNewLocation getWarehouses={this.getWarehouses} />
       </div>
     )
   }
