@@ -62,7 +62,7 @@ class WarehouseLocations extends React.Component {
           <table>
             <tbody>
               <tr className="locations__titles">
-                <th className="locations__title-desktop">WAREHOUSE</th>
+                <th className="locations__title-desktop warehouse__desktop">WAREHOUSE</th>
                 <th className="locations__title-desktop contact">CONTACT</th>
                 <th className="locations__title-desktop contact__info">CONTACT INFORMATION</th>
                 <th className="locations__title-desktop category__title">CATEGORIES</th>

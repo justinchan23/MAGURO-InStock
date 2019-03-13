@@ -282,20 +282,25 @@ td {
       .locations__titles {
         display: flex;
 
+        th {
+          text-align: left;
+        }
+
+        .warehouse__desktop {
+          margin-right: 186px;
+        }
+
+        .contact {
+          margin-right: 230px;
+        }
+
+        .contact__info {
+          margin-right: 140px;
+        }
+
         .locations__title-desktop {
           @include colorSilver;
           display: block;
-        }
-
-        th {
-          text-align: left;
-          width: 100%;
-        }
-
-
-        .category__title {
-          margin-right: -32px;
-          margin-left: 16px;
         }
       }
 
@@ -307,11 +312,12 @@ td {
 
         .warehouse__title {
           width: 20%;
+          height: 45px;
         }
-
 
         .padding__info {
           padding-right: 24px;
+          padding-top: 16px;
         }
 
         td {
