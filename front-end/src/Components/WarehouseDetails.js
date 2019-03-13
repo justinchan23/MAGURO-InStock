@@ -35,7 +35,7 @@ class WarehouseDetails extends Component {
                   onClick={() => this.props.history.goBack()}
                 />
 
-                <h1 className="cd__one__title">{this.state.currentdata.name}</h1>
+                <h1 className="cd__one__title">{this.state.currentdata.warehouse_name}</h1>
               </div>
               <hr className="cd__hr" />
               <div className="cd__desk">
@@ -48,7 +48,7 @@ class WarehouseDetails extends Component {
                     </div>
                     <div className="cd__info__block">
                       <p className="cd__info">{}</p>
-                      <p className="cd__info">{this.state.currentdata.postal_code}</p>
+                      <p className="cd__info">{ this.state.currentdata.postal_code + ", " + this.state.currentdata.country_code}</p>
                     </div>
                   </div>
                   <div className="cd__block">

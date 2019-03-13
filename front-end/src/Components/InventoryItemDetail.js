@@ -3,6 +3,7 @@ import '../Styles/InventoryItemDetail/InventoryItemDetail.css'
 import BackButton from '../Assets/Icons/SVG/Icon-back-arrow.svg'
 // import { Link } from 'react-router-dom'
 import axios from 'axios'
+import InventoryItemDetailEdit from './InventoryItemDetailEdit';
 
 class InventoryItemDetail extends Component {
   state = {
@@ -18,6 +19,7 @@ class InventoryItemDetail extends Component {
   }
   render() {
     return (
+      <div>
       <div className="iid">
         <div className="iid__one">
           <img
@@ -26,8 +28,8 @@ class InventoryItemDetail extends Component {
             alt="backbutton"
             onClick={() => this.props.history.goBack()}
           />
-          <h2 className="iid__one__title">{this.state.name}</h2>
-          <button className="iid__one__button">In Stock</button>
+          <h2 className="iid__one__title">{this.state.itemDetails.name}</h2>
+          <button className="iid__one__button">{this.state.itemDetails.in_stock}</button>
         </div>
         <hr className="iid__hr" />
         <div className="iid__desk">
@@ -76,6 +78,8 @@ class InventoryItemDetail extends Component {
         <div className="iid__block__button">
           <button className="iid__button">EDIT</button>
         </div>
+        <InventoryItemDetailEdit/>
+      </div>
       </div>
     )
   }
