@@ -13,15 +13,15 @@ router.post('/', (req, res) => {
   const newInventoryItem = {
     id: faker.random.number(),
     name: req.body.name,
-    'short-description': req.body.description,
-    'long-description':
+    short_description: req.body.short_description,
+    long_description:
       "Here is a more detailed summary of the product name, it's uses, inductries and possible attributes that could be used to descript the product.",
-    'ordered-by': faker.name.findName(),
-    'last-ordered': req.body.last_ordered,
+    ordered_by: faker.name.findName(),
+    last_ordered: req.body.last_ordered,
     location: req.body.city + ', ' + req.body.country,
     quantity: req.body.quantity,
-    'reference-number': faker.finance.bic(),
-    'in-stock': req.body.status,
+    reference_number: faker.finance.bic(),
+    in_stock: req.body.in_stock,
     categories: ['Industrial', 'Automotive', 'Heavy', 'Mechanical', 'Engineering', 'Sales']
   }
 
@@ -49,6 +49,16 @@ router.get('/:id', (req, res) => {
     return item.id == req.params.id
   })
   inventoryItem ? res.send(inventoryItem) : res.status(404).send('Item not found')
+})
+
+router.delete('/:id', (req, res) => {
+  const inventoryIndex = inventory.findIndex(item => {
+    return item.id == req.params.id
+  })
+  inventory.splice(inventoryIndex, 1)
+  // uncomment next line for production
+  // fs.writeFileSync('../Database/inventory.json', JSON.stringify(inventory))
+  res.send('Item has been deleted')
 })
 
 module.exports = router

@@ -118,6 +118,7 @@ a {
 
 .warehouse {
   margin: 0;
+  padding: 0 16px 0 16px;
   background-color: $alablaster;
 }
 
@@ -189,6 +190,7 @@ a {
   }
   .warehouse {
     margin: 0;
+    padding: 24px 16px 0 16px;
   }
 }
 
@@ -200,7 +202,7 @@ a {
   }
   .warehouse {
     margin: 0;
-    padding: 0 24px;
+    padding: 24px 16px 0 16px;
   }
   .inventory__container {
     margin: 20px;
@@ -237,9 +239,11 @@ a {
 
       .inventory__header--desktop {
         display: flex;
+        margin-right: 20px;
 
         .inventory__item {
           width: 33%;
+          margin-right: 27px;
         }
       }
 
@@ -260,6 +264,9 @@ a {
 
         .inventory__item {
           width: 39%;
+          margin-right: 25px;
+          height: 40px;
+          overflow: auto;
         }
 
         .inventory__quantity {
