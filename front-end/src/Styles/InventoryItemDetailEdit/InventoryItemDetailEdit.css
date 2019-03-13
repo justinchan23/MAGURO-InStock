@@ -202,8 +202,9 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: right;
-        align-content: right;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .iide__block__bottom {
     width: 100%;
@@ -353,8 +354,8 @@ select {
     width: 720px;
   }
   .iide__button__save {
-    width: 180px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     border-radius: 5px;
   }
 }
@@ -612,6 +613,11 @@ select {
   }
   .iide__block__button {
     float: right;
+  }
+  .iide__button__save {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
   }
   .iide__block__foot {
     width: 100%;

@@ -28,26 +28,6 @@ class WarehouseDetails extends Component {
           <div className="cd__top__general slide-in-left">
             <div className="cd">
               <div className="cd__one">
-<<<<<<< HEAD
-                <Link to="/warehouses">
-                  <img className="cd__backbutton" src={BackButton} alt="backbutton" />
-                </Link>
-                <h1 className='cd__one__title'>{this.state.currentdata.warehouse_name}</h1>
-          </div>
-          <hr className='cd__hr' />
-          <div className='cd__desk'>
-            <div className='cd__info__chunk'>
-              <div className='cd__block'>
-                <h4 className='cd__header'>ADDRESS</h4>
-                <div className='cd__info__block'>
-                  <p className='cd__info'>{this.state.currentdata.address}</p>
-                  <p className='cd__info'>Suite 201</p>
-                </div>
-                <div className='cd__info__block'>
-                  <p className='cd__info'>{}</p>
-                  <p className='cd__info'>{this.state.currentdata.postal_code}</p>
-                </div>
-=======
                 <img
                   className="cd__backbutton"
                   src={BackButton}
@@ -55,8 +35,7 @@ class WarehouseDetails extends Component {
                   onClick={() => this.props.history.goBack()}
                 />
 
-                <h1 className="cd__one__title">{this.state.currentdata.name}</h1>
->>>>>>> b953cfba4986bb78e27bfce1ff0c78718262401f
+                <h1 className="cd__one__title">{this.state.currentdata.warehouse_name}</h1>
               </div>
               <hr className="cd__hr" />
               <div className="cd__desk">
@@ -69,7 +48,7 @@ class WarehouseDetails extends Component {
                     </div>
                     <div className="cd__info__block">
                       <p className="cd__info">{}</p>
-                      <p className="cd__info">{this.state.currentdata.postal_code}</p>
+                      <p className="cd__info">{ this.state.currentdata.postal_code + ", " + this.state.currentdata.country_code}</p>
                     </div>
                   </div>
                   <div className="cd__block">

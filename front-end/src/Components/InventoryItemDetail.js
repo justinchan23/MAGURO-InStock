@@ -19,15 +19,7 @@ class InventoryItemDetail extends Component {
   }
   render() {
     return (
-<<<<<<< HEAD
-      <div className='iid'>
-        <div className='iid__one'>
-          <Link to='/inventory'>
-            <img className='iid__backbutton' src={BackButton} alt='backbutton' />
-          </Link>
-          <h2 className='iid__one__title'>{this.state.itemDetails.name}</h2>
-          <button className='iid__one__button'>In Stock</button>
-=======
+      <div>
       <div className="iid">
         <div className="iid__one">
           <img
@@ -36,9 +28,8 @@ class InventoryItemDetail extends Component {
             alt="backbutton"
             onClick={() => this.props.history.goBack()}
           />
-          <h2 className="iid__one__title">{this.state.name}</h2>
-          <button className="iid__one__button">In Stock</button>
->>>>>>> b953cfba4986bb78e27bfce1ff0c78718262401f
+          <h2 className="iid__one__title">{this.state.itemDetails.name}</h2>
+          <button className="iid__one__button">{this.state.itemDetails.in_stock}</button>
         </div>
         <hr className="iid__hr" />
         <div className="iid__desk">
@@ -88,6 +79,7 @@ class InventoryItemDetail extends Component {
           <button className="iid__button">EDIT</button>
         </div>
         <InventoryItemDetailEdit/>
+      </div>
       </div>
     )
   }
