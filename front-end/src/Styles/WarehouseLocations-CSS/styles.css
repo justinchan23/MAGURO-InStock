@@ -270,17 +270,21 @@ td {
     display: -ms-flexbox;
     display: flex;
   }
+  .locations__container table .locations__titles th {
+    text-align: left;
+  }
+  .locations__container table .locations__titles .warehouse__desktop {
+    margin-right: 186px;
+  }
+  .locations__container table .locations__titles .contact {
+    margin-right: 230px;
+  }
+  .locations__container table .locations__titles .contact__info {
+    margin-right: 140px;
+  }
   .locations__container table .locations__titles .locations__title-desktop {
     color: #afafaf;
     display: block;
-  }
-  .locations__container table .locations__titles th {
-    text-align: left;
-    width: 100%;
-  }
-  .locations__container table .locations__titles .category__title {
-    margin-right: -32px;
-    margin-left: 16px;
   }
   .locations__container table .locations__row {
     display: -webkit-box;
@@ -294,9 +298,11 @@ td {
   }
   .locations__container table .locations__row .warehouse__title {
     width: 20%;
+    height: 45px;
   }
   .locations__container table .locations__row .padding__info {
     padding-right: 24px;
+    padding-top: 16px;
   }
   .locations__container table .locations__row td {
     text-align: left;
