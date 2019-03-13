@@ -10,35 +10,11 @@ const InventoryItemDetailEdit = () => {
   const stockStatusChange = () => {
     stockStatus ? setStockStatus(false) : setStockStatus(true)
   }
-  const editItem = () => {
-    if (
-      !editInventoryForm.current.productName.value ||
-      !editInventoryForm.current.lastOrdered.value ||
-      !editInventoryForm.current.city.value ||
-      !editInventoryForm.current.country.value ||
-      !editInventoryForm.current.quantity.value
-    ) {
-      alert('All fields are required unless marked.')
-    }
-    const editInventoryItem = {
-      name: editInventoryForm.current.productName.value,
-      'short-description': editInventoryForm.current.description.value,
-      'ordered-by': editInventoryForm.current.lastOrdered.value,
-      'last-ordered': editInventoryForm.current.lastOrdered.value,
-      city: editInventoryForm.current.city.value,
-      country: editInventoryForm.current.country.value,
-      quantity: editInventoryForm.current.quantity.value,
-      'in-stock': stockStatus
-    }
-  }
-
-  // const cancelAdd = () => {
-  // }
-
-  // if (addStatus)
+  
 
   return (
     <div className='iide'>
+    <div className='iide__bigblock'>
       <div className='iide__one'>
         <img className='iide__backbutton' src={BackButton} alt='backbutton' />
         <h2 className='iide__one__title'>TITLE</h2>
@@ -47,29 +23,29 @@ const InventoryItemDetailEdit = () => {
       <div className='iide__desk'>
         <form className='iide__form'>
           <div className='iide__description__container'>
-            <label>Item Description</label>
-            <input className='iide__description' />
+            <label className='iide__header'>ITEM DESCRIPTION</label>
+            <input className='iide__description color' />
           </div>
           <div className='iide__desk__two'>
             <div className='iide__info__chunk'>
               <div className='iide__block'>
                 <div className='iide__sub'>
                   <label className='iide__header'>ORDERED BY</label>
-                  <input className='iide__input' />
+                  <input className='iide__input color' />
                 </div>
                 <div>
                   <label className='iide__header'>LAST ORDERED</label>
-                  <input className='iide__input' />
+                  <input className='iide__input color' />
                 </div>
               </div>
               <div className='iide__block'>
                 <div className='iide__sub'>
                   <label className='iide__header'>REFERENCE NUMBER</label>
-                  <input className='iide__input' />
+                  <input className='iide__input reference color' />
                 </div>
-                <div>
+                <div className='iide__locations'>
                   <label className='iide__header'>LOCATION</label>
-                  <select name='country' className='iide__select' required>
+                  <select name='country' className='iide__select color' required>
                     <option value='' />
                     <option value='Canada'>Canada</option>
                     <option value='US'>US</option>
@@ -83,12 +59,12 @@ const InventoryItemDetailEdit = () => {
                 <div className='iide__block__status'>
                   <div className='iide__sub'>
                     <label className='iide__header'>QUANTITY</label>
-                    <input className='iide__input' />
+                    <input className='iide__input quantity color' />
                   </div>
                   <label className='iide__toggle__container'>
                     STATUS
                     <div className='iide__stock'>
-                      <span>IN STOCK</span>
+                      <span className='iide__toggle'>IN STOCK</span>
                       <Switch
                         checked={stockStatus}
                         onChange={stockStatusChange}
@@ -102,7 +78,7 @@ const InventoryItemDetailEdit = () => {
                 </div>
                 <div className='iide__categories__container'>
                   <label className='iide__header'>CATEGORIES</label>
-                  <input className='iide__input__categories' />
+                  <input className='iide__input__categories color' />
                 </div>
               </div>
             </div>
@@ -110,10 +86,11 @@ const InventoryItemDetailEdit = () => {
         </form>
       </div>
       <div className='iide__block__foot'>
-      <div className='iide__block__button'>
+      <div>
         <button className='iide__button__save'>SAVE</button>
       </div>
       <button className='iide__button__cancel'>CANCEL</button>
+      </div>
       </div>
     </div>
   )

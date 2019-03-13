@@ -3,6 +3,7 @@ import '../Styles/InventoryItemDetail/InventoryItemDetail.css'
 import BackButton from '../Assets/Icons/SVG/Icon-back-arrow.svg'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import InventoryItemDetailEdit from './InventoryItemDetailEdit';
 
 class InventoryItemDetail extends Component {
   state = {
@@ -73,6 +74,7 @@ class InventoryItemDetail extends Component {
         <div className='iid__block__button'>
           <button className='iid__button'>EDIT</button>
         </div>
+        <InventoryItemDetailEdit/>
       </div>
     )
   }

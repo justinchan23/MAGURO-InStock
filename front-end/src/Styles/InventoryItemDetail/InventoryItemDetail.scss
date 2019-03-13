@@ -57,9 +57,6 @@ iid__one__title {
   .iid__info {
     margin: 0px 0px 24px 0px;
   }
-  .iid__hr {
-    display: none;
-  }
   .iid__sub {
     display: flex;
     flex-direction: column;
@@ -83,7 +80,7 @@ iid__one__title {
     height: 80px;
   }
   .iid__two {
-      width: 70%
+    width: 70%;
   }
   .iid__backbutton {
     margin: 0px 25px 0px 0px;
@@ -92,21 +89,21 @@ iid__one__title {
     margin: 0px 25px 0px 0px;
   }
   .iid__hr {
-      margin: 0px 0px 30px 0px;
+    margin: 0px 0px 30px 0px;
   }
   .iid__info {
-      height: 60px;
+    height: 60px;
   }
   .iid__block {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 45%
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
   }
   .iid__info__chunk {
     display: flex;
     flex-direction: row;
-    margin: 20px 0px 0px 0px
+    margin: 20px 0px 0px 0px;
   }
   .iid__button {
     height: 50px;
@@ -120,54 +117,54 @@ iid__one__title {
   }
 }
 @media screen and (min-width: 1200px) {
-    .iid {
-        margin: 0px 180px;
-    }
-    .iid__one {
-        display: flex;
-        justify-content: left;
-        height: 80px;
-      }
-      .iid__desk {
-          display: flex;
-          flex-direction: row;
-      }
-      .iid__backbutton {
-        margin: 0px 25px 0px 0px;
-      }
-      .iid__info__chunk {
-          display: flex;
-          flex-direction: row;
-      }
-      .iid__one__title {
-        margin: 0px 25px 0px 0px;
-      }
-      .iid__hr {
-          margin: 0px 0px 30px 0px;
-      }
-      .iid__two {
-          width: 50%
-      }
-      .iid__info__two {
-          width: 80%
-      }
-      .iid__info {
-          height: 60px;
-      }
-      .iid__block {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50%
-    }
-    .iid__button {
-        height: 50px;
-        width: 150px;
-        background-color: rgb(8, 74, 144);
-        color: white;
-        border-radius: 5px;
-      }
-    .iid__block__button {
-        float: right;
-    }
+  .iid {
+    margin: 0px 180px;
+  }
+  .iid__one {
+    display: flex;
+    justify-content: left;
+    height: 80px;
+  }
+  .iid__desk {
+    display: flex;
+    flex-direction: row;
+  }
+  .iid__backbutton {
+    margin: 0px 25px 0px 0px;
+  }
+  .iid__info__chunk {
+    display: flex;
+    flex-direction: row;
+  }
+  .iid__one__title {
+    margin: 0px 25px 0px 0px;
+  }
+  .iid__hr {
+    margin: 0px 0px 30px 0px;
+  }
+  .iid__two {
+    width: 50%;
+  }
+  .iid__info__two {
+    width: 80%;
+  }
+  .iid__info {
+    height: 60px;
+  }
+  .iid__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .iid__button {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(8, 74, 144);
+    color: white;
+    border-radius: 5px;
+  }
+  .iid__block__button {
+    float: right;
+  }
 }
