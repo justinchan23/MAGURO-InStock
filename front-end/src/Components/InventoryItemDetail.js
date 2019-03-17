@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../Styles/InventoryItemDetail/InventoryItemDetail.css'
-import BackButton from '../Assets/Icons/SVG/Icon-back-arrow.svg'
+// import BackButton from '../Assets/Icons/SVG/Icon-back-arrow.svg'
 // import { Link } from 'react-router-dom'
 import axios from 'axios'
 import InventoryItemDetailEdit from './InventoryItemDetailEdit'
@@ -49,6 +49,7 @@ class InventoryItemDetail extends Component {
               itemDetails={this.state.itemDetails}
               stock={stock}
               editToggle={this.editToggle}
+              getInventoryDetail={this.getInventoryDetail}
             />
           </div>
         </div>

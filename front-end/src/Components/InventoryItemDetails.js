@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import '../Styles/InventoryItemDetail/InventoryItemDetail.css'
 import BackButton from '../Assets/Icons/SVG/Icon-back-arrow.svg'
+import { Link } from 'react-router-dom'
 
 const InventoryItemDetails = props => {
   let stock = 'In Stock'
@@ -11,12 +12,9 @@ const InventoryItemDetails = props => {
     // <div>
     <div className="iid">
       <div className="iid__one">
-        <img
-          className="iid__backbutton"
-          src={BackButton}
-          alt="backbutton"
-          onClick={() => this.props.history.goBack()}
-        />
+        <Link to="/inventory">
+          <img className="iid__backbutton" src={BackButton} alt="backbutton" />
+        </Link>
         <h2 className="iid__one__title">{props.itemDetails.name}</h2>
         <button className="iid__one__button">{stock}</button>
       </div>
@@ -24,7 +22,7 @@ const InventoryItemDetails = props => {
       <div className="iid__desk">
         <div className="iid__two">
           <h4 className="iid__header">ITEM DESCRIPTION</h4>
-          <p className="iid__info__two">{props.itemDetails.short_description}</p>
+          <p className="iid__info__two">{props.itemDetails.long_description}</p>
         </div>
         <div>
           <div className="iid__info__chunk">
