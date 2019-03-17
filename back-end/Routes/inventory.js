@@ -55,7 +55,8 @@ router.delete('/:id', (req, res) => {
   const inventoryIndex = inventory.findIndex(item => {
     return item.id == req.params.id
   })
-  if (inventoryIndex) {
+
+  if (inventoryIndex >= 0) {
     inventory.splice(inventoryIndex, 1)
     // uncomment next line for production
     // fs.writeFileSync('../Database/inventory.json', JSON.stringify(inventory))
