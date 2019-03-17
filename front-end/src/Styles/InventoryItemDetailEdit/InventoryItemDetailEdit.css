@@ -117,7 +117,7 @@ select {
 
 @media screen and (min-width: 320px) and (max-width: 450px) {
   .iide {
-    margin: 0px 10px;
+    margin: 0px;
   }
   .iide__one {
     display: -webkit-box;
@@ -164,22 +164,22 @@ select {
     display: block;
     border: 1px #e1e1e1 solid;
     height: 35px;
-    width: 288px;
+    width: 270px;
   }
   .iide__input__categories {
     border: 1px #e1e1e1 solid;
     border-radius: 3px;
     height: 90px;
-    width: 288px;
+    width: 270px;
   }
   .iide__description {
     border: 1px solid;
     border-radius: 3px;
     height: 110px;
-    width: 288px;
+    width: 270px;
   }
   .iide__select {
-    width: 288px;
+    width: 270px;
   }
   .iide__sub {
     display: -webkit-box;
@@ -195,7 +195,7 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 294px;
+    width: 270px;
     height: 50px;
   }
   .iide__stock {
