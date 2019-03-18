@@ -27,15 +27,16 @@ class InventoryItemDetail extends Component {
   }
 
   render() {
+    const { itemDetails, editItem } = this.state
     let stock = 'In Stock'
-    if (!this.state.itemDetails.in_stock) {
+    if (!itemDetails.in_stock) {
       stock = 'Out of Stock'
     }
-    if (!this.state.editItem) {
+    if (!editItem) {
       return (
         <div>
           <InventoryItemDetails
-            itemDetails={this.state.itemDetails}
+            itemDetails={itemDetails}
             stock={stock}
             editToggle={this.editToggle}
           />
@@ -46,7 +47,7 @@ class InventoryItemDetail extends Component {
         <div>
           <div className="iid">
             <InventoryItemDetailEdit
-              itemDetails={this.state.itemDetails}
+              itemDetails={itemDetails}
               stock={stock}
               editToggle={this.editToggle}
               getInventoryDetail={this.getInventoryDetail}

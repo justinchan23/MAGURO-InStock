@@ -28,8 +28,7 @@ router.post('/', (req, res) => {
   if (req.body.name !== undefined) {
     inventory.push(newInventoryItem)
 
-    // uncomment next line for production
-    // fs.writeFileSync('../Database/inventory.json', JSON.stringify(inventory))
+    fs.writeFileSync('./Database/inventory.json', JSON.stringify(inventory))
 
     res.status(200).send({
       success: true,
@@ -55,10 +54,11 @@ router.delete('/:id', (req, res) => {
   const inventoryIndex = inventory.findIndex(item => {
     return item.id == req.params.id
   })
-  if (inventoryIndex) {
+
+  if (inventoryIndex >= 0) {
     inventory.splice(inventoryIndex, 1)
-    // uncomment next line for production
-    // fs.writeFileSync('../Database/inventory.json', JSON.stringify(inventory))
+
+    fs.writeFileSync('./Database/inventory.json', JSON.stringify(inventory))
     res.send('Item has been deleted')
   } else {
     res.status(400).send('Could not find item with that ID')
@@ -79,9 +79,8 @@ router.put('/:id', (req, res) => {
     inventoryItem.in_stock = req.body.in_stock
     inventoryItem.categories = req.body.categories
 
-    // uncomment next line for production
-    // fs.writeFileSync('../Database/inventory.json', JSON.stringify(inventory))
-    // console.log(inventoryItem)
+    fs.writeFileSync('./Database/inventory.json', JSON.stringify(inventory))
+
     res.send({ message: 'Successfull updated item', item: inventoryItem })
   } else {
     res.status(400).send('Could not find item with that ID')

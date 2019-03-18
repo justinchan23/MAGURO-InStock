@@ -13,7 +13,8 @@ const InventoryItemDetailEdit = props => {
     stockStatus ? setStockStatus(false) : setStockStatus(true)
   }
 
-  const editItem = props => {
+  const editItem = ({ getInventoryDetail, editToggle, itemDetails }) => {
+    // const {getInventoryDetail, editToggle} = props
     const itemBody = {
       long_description: editInventoryForm.current.long_description.value,
       ordered_by: editInventoryForm.current.ordered_by.value,
@@ -24,11 +25,10 @@ const InventoryItemDetailEdit = props => {
       in_stock: stockStatus,
       categories: editInventoryForm.current.categories.value
     }
-    // console.log(itemBody)
-    axios.put(`http://localhost:8080/inventory/${props.itemDetails.id}`, itemBody).then(() => {
-      return props.getInventoryDetail()
+    axios.put(`http://localhost:8080/inventory/${itemDetails.id}`, itemBody).then(() => {
+      return getInventoryDetail()
     })
-    props.editToggle()
+    editToggle()
   }
 
   return (

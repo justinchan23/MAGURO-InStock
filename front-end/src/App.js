@@ -7,7 +7,6 @@ import WarehouseLocations from './Components/WarehouseLocations'
 import Inventory from './Components/Inventory'
 import InventoryItemDetail from './Components/InventoryItemDetail'
 import WarehouseDetails from './Components/WarehouseDetails'
-import InventoryItemDetailEdit from './Components/InventoryItemDetailEdit'
 
 const App = () => (
   <div>
@@ -15,12 +14,11 @@ const App = () => (
       <div>
         <Nav />
         <Switch>
-          <Route exact path='/' component={Main} />
-          <Route exact path='/warehouses' component={WarehouseLocations} />
-          <Route exact path='/inventory' component={Inventory} />
-          <Route path='/warehouses/:id' component={WarehouseDetails} />
-          <Route path='/inventory/:id' component={InventoryItemDetail} />
-          <Route path='/inventoryedit' component={InventoryItemDetailEdit} />
+          <Route exact path="/" component={Main} />
+          <Route exact path="/warehouses" component={WarehouseLocations} />
+          <Route exact path="/inventory" component={Inventory} />
+          <Route path="/warehouses/:id" component={WarehouseDetails} />
+          <Route path="/inventory/:id" component={InventoryItemDetail} />
         </Switch>
       </div>
     </BrowserRouter>
