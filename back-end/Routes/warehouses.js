@@ -35,8 +35,7 @@ router.post('/', (req, res) => {
   if (req.body) {
     warehouses.push(newWarehouse)
 
-    // uncomment next line for production
-    // fs.writeFileSync('../Database/warehouses.json', JSON.stringify(warehouses))
+    fs.writeFileSync('./Database/warehouses.json', JSON.stringify(warehouses))
 
     res.send({
       success: true,

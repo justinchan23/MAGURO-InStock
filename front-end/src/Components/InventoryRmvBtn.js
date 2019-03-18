@@ -22,19 +22,20 @@ class InventoryRmvBtn extends React.Component {
   }
 
   render() {
+    const { removeItem, id } = this.props
     return (
       <div
-        className='toggleContainer'
+        className="toggleContainer"
         ref={node => {
           this.node = node
         }}
       >
-        <button onClick={this.toggleBtn} className='toggleBtn'>
-          <img src='../Icons/SVG/Icon-kebab-default.svg' alt='remove' />
+        <button onClick={this.toggleBtn} className="toggleBtn">
+          <img src="../Icons/SVG/Icon-kebab-default.svg" alt="remove" />
         </button>
         {this.state.showBtn && (
           <div>
-            <button onClick={() => this.props.removeItem(this.props.id)} className='removeBtn'>
+            <button onClick={() => removeItem(id)} className="removeBtn">
               Remove
             </button>
           </div>

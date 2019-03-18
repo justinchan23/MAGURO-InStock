@@ -30,6 +30,7 @@ class Inventory extends React.Component {
   }
 
   render() {
+    const { inventory } = this.state
     return (
       <div className="inventory__container">
         <div className="inventory__container-header">
@@ -37,7 +38,7 @@ class Inventory extends React.Component {
           <input type="text" placeholder="Search" className="inventory__search" alt="search" />
         </div>
         <InventoryTable
-          inventory={this.state.inventory}
+          inventory={inventory}
           getInventory={this.getInventory}
           removeItem={this.removeItem}
         />
